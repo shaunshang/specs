@@ -1,0 +1,50 @@
+.section {
+  .section-head {
+    padding: 20px 40px 0;
+    > *:not(.clear) { @include line-height(40px, 40px); }
+    > h1,
+    > h2 {
+      @include text-overflow();
+      @include box-sizing(border-box);
+      padding: 0 16px;
+      margin-bottom: 8px;
+      span { @extend .inline-top; }
+      &[class^="icon-"]:before,
+      &[class*=" icon-"]:before {
+        @extend .inline-top;
+        @include line-height(40px, 40px);
+        @include font(24px, 300);
+        margin-right: 8px;
+      }
+    }
+    > h1 { @include font(24px, 300); }
+    > h2 { @include font(16px, 600); }
+    .controls {
+      margin-bottom: 8px;
+      > li {
+        @extend .inline-top;
+        margin: 0 4px;
+        .btn {
+          @extend .inline-top;
+          @include line-height(40px, 40px);
+          &.circle {
+            width: 40px;
+            &[class^="icon-"]:before,
+            &[class*=" icon-"]:before {
+              @extend .inline-top;
+            }
+          }
+          &[class^="icon-"]:before,
+          &[class*=" icon-"]:before {
+            line-height: 40px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .section-body {
+    min-height: 50px;
+    overflow: hidden;
+  }
+}

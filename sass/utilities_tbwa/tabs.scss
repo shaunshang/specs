@@ -1,0 +1,32 @@
+/* -------------------- Tabs -------------------- */
+.tab-container {
+  .tabs {
+    position: relative;
+    margin: 8px 16px 0;
+    li {
+      @extend .inline-top;
+      &.active a { @include opacity(100); }
+      a {
+        @include transition(0.4s);
+        @include line-height(100%, 40px);
+        @include opacity(70);
+        display: block;
+        padding: 0 24px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:hover { @include opacity(80); }
+        &[data-with_noti="true"]:after {
+          @include tblr(-10px, auto, auto, 1px);
+          @include size(20px, 20px);
+        }
+      }
+    }
+  }
+  .tab-content {
+    height: 100%;
+    overflow: auto;
+  }
+}
+/* -------------------- END Tabs -------------------- */

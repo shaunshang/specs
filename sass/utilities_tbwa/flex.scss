@@ -1,0 +1,32 @@
+.flex-container {
+  display: flex;
+  /* ---------- Direction ---------- */
+  @each $dir in 'row', 'row-reverse', 'column', 'column-reverse' {
+    &.#{$dir} { flex-direction: #{$dir}; }
+  }
+  /* ---------- END Direction ---------- */
+
+  /* ---------- Wrap ---------- */
+  @each $wrap in 'nowrap', 'wrap', 'wrap-reverse' {
+    &.flex-#{$wrap} { flex-wrap: #{$wrap}; }
+  }
+  /* ---------- END Wrap ---------- */
+
+  /* ---------- Flow ---------- */
+  @each $flow in 'flex-start', 'flex-end', 'center', 'space-between', 'space-around' {
+    &.#{$flow} { justify-content: #{$flow}; }
+  }
+  /* ---------- END Flow ---------- */
+
+  /* ---------- Align Item ---------- */
+  @each $align in 'flex-start', 'flex-end', 'center', 'baseline', 'stretch' {
+    &.item-#{$align} { align-items: #{$align}; }
+  }
+  /* ---------- END Align Item ---------- */
+
+  /* ---------- Align Content ---------- */
+  @each $align in 'flex-start', 'flex-end', 'center', 'space-between', 'space-around', 'stretch' {
+    &.content-#{$align} { align-content: #{$align}; }
+  }
+  /* ---------- END Align Content ---------- */
+}

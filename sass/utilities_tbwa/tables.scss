@@ -1,0 +1,50 @@
+/* ---------- Table ---------- */
+.table {
+  border-collapse: collapse;
+  thead tr th,
+  tbody tr td,
+  tfoot tr th {
+    padding: 0 8px;
+  }
+  thead tr.controls th {
+    border: none;
+    height: 64px;
+    > ul > li {
+      @extend .inline-middle;
+    }
+  }
+  thead tr th,
+  tfoot tr th {
+    height: 56px;
+  }
+  thead tr th {
+    outline: 0;
+    color: $grey_500;
+  }
+  tbody tr td {
+    height: 48px;
+    a:not(.btn):hover { text-decoration: underline; }
+    &.actions {
+      a, span {
+        @extend .inline-middle;
+        &:hover { text-decoration: none; }
+        &.btn {
+          &.circle { @include size(30px, 30px); }
+          &:before { line-height: 28px; }
+        }
+      }
+    }
+  }
+}
+/* ---------- END Table ---------- */
+
+.table-striped > tbody {
+  > tr:nth-child(even) > td { background: #F7F7F7; }
+}
+.table-bordered {
+  thead tr th,
+  tbody tr td { border-bottom: solid 1px $grey_300; }
+}
+.table-hover > tbody {
+  > tr:hover > td { background: $grey_200; }
+}

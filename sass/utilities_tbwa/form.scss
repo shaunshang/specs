@@ -1,0 +1,68 @@
+.form {
+  @extend .section;
+  height: 100%;
+  overflow: auto;
+  .form-head {
+    @extend .section-head;
+    padding: 20px 0 10px;
+    h1 { margin: 0 auto 8px; }
+  }
+  .form-body {
+    .field {
+      position: relative;
+      margin: 0 auto;
+      padding: 24px 0;
+      .label_name {
+        @include line-height(30px, 30px);
+        @include font(14px, 400);
+        @include tblr-cust((top, 0), (left, 0));
+        @include user-select(none);
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 8px;
+        margin: 0 4px;
+        text-transform: uppercase;
+      }
+      div.controls {
+        position: relative;
+        line-height: 30px;
+        padding: 0 8px;
+        .textfield {
+          @include font(18px, 200);
+          font-family: $helvetica;
+          &.datefield {
+            cursor: pointer;
+          }
+        }
+        .label_name {
+          @include line-height(100%, 30px);
+          @include font(18px, 200);
+          @include transition(0.2s);
+          display: inline-block;
+          &.focus, &.filled {
+            @include font(14px, 400);
+            top: -24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.textfield {
+  @extend .inline-middle;
+  @include box-sizing(border-box);
+  height: 30px;
+  padding: 0 8px;
+  outline: 0;
+  &.search {
+    padding: 0 5px 0 30px;
+    margin: 0;
+  }
+  &.datefield {
+    font-size: 13px;
+    line-height: 27px;
+    text-align: center;
+  }
+}

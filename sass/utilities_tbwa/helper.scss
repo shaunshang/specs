@@ -1,0 +1,42 @@
+.transition {
+  -webkit-transition:  0.4s;
+  -moz-transition:     0.4s;
+  -o-transition:       0.4s;
+  transition:          0.4s;
+}
+.transition-fast {
+  -webkit-transition:  0.1s;
+  -moz-transition:     0.1s;
+  -o-transition:       0.1s;
+  transition:          0.1s;
+}
+.clear { clear: both; }
+.hide { display: none; }
+.hidden { display:none!important; }
+.visible { overflow: visible!important; }
+.auto { overflow: auto!important; }
+.pointer { cursor: pointer; }
+.vm {
+  @include tblr(0,0,0,0);
+  position: absolute;
+  margin: auto;
+}
+.nowrap { white-space: nowrap; }
+.text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.table-fixed { table-layout: fixed; }
+@each $dir in 'left', 'right', 'center' {
+  .text-#{$dir} { text-align: #{$dir}!important; }
+}
+@each $dir in 'left', 'right' {
+  .#{$dir} { float: #{$dir}; }
+}
+@each $valign in 'top', 'middle', 'baseline' {
+  .inline-#{$valign} {
+    display: inline-block;
+    vertical-align: #{$valign};
+  }
+}

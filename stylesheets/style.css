@@ -1,0 +1,412 @@
+/* -------------------- Functions -------------------- */
+/* -------------------- END Functions -------------------- */
+/* -------------------- Font Family -------------------- */
+/* -------------------- END Font Family -------------------- */
+/* -------------------- Colors -------------------- */
+/* ---------- Red ---------- */
+/* ---------- END Red ---------- */
+/* ---------- Pink ---------- */
+/* ---------- END Pink ---------- */
+/* ---------- Purple ---------- */
+/* ---------- END Purple ---------- */
+/* ---------- Deep Purple ---------- */
+/* ---------- END Deep Purple ---------- */
+/* ---------- Indigo ---------- */
+/* ---------- END Indigo ---------- */
+/* ---------- Blue ---------- */
+/* ---------- END Blue ---------- */
+/* ---------- Light Blue ---------- */
+/* ---------- END Light Blue ---------- */
+/* ---------- Cyan ---------- */
+/* ---------- END Cyan ---------- */
+/* ---------- Teal ---------- */
+/* ---------- END Teal ---------- */
+/* ---------- Green ---------- */
+/* ---------- END Green ---------- */
+/* ---------- Light Green ---------- */
+/* ---------- END Light Green ---------- */
+/* ---------- Lime ---------- */
+/* ---------- END Lime ---------- */
+/* ---------- Yellow ---------- */
+/* ---------- END Yellow ---------- */
+/* ---------- Amber ---------- */
+/* ---------- END Amber ---------- */
+/* ---------- Orange ---------- */
+/* ---------- END Orange ---------- */
+/* ---------- Deep Orange ---------- */
+/* ---------- END Deep Orange ---------- */
+/* ---------- Brown ---------- */
+/* ---------- END Brown ---------- */
+/* ---------- Grey ---------- */
+/* ---------- END Grey ---------- */
+/* ---------- Blue Grey ---------- */
+/* ---------- END Blue Grey ---------- */
+/* -------------------- END Colors -------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/reset\.scss}line{font-family:\000031}}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/reset\.scss}line{font-family:\000035}}
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn,
+em, img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul,
+li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu,
+nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/reset\.scss}line{font-family:\0000315}}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/reset\.scss}line{font-family:\0000319}}
+blockquote, q {
+  quotes: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/reset\.scss}line{font-family:\0000320}}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/reset\.scss}line{font-family:\0000325}}
+select {
+  outline: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/reset\.scss}line{font-family:\0000326}}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/reset\.scss}line{font-family:\0000327}}
+body {
+  line-height: 1;
+  font-size: 12px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/reset\.scss}line{font-family:\0000331}}
+a {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/reset\.scss}line{font-family:\0000332}}
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/reset\.scss}line{font-family:\0000337}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/reset\.scss}line{font-family:\0000338}}
+textarea.noresize {
+  resize: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/base\.scss}line{font-family:\000036}}
+body {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "helvetica neue", arial, helvetica, sans-serif;
+  color: #212121;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/base\.scss}line{font-family:\0000311}}
+.container {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\000031}}
+.span1, .span2, .span3, .span4,
+.span5, .span6, .span7, .span8,
+.span9, .span10, .span11, .span12 {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000310}}
+.span1 {
+  width: 8.333333333333332%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000311}}
+.span2 {
+  width: 16.666666666666664%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000312}}
+.span3 {
+  width: 25%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000313}}
+.span4 {
+  width: 33.33333333333333%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000314}}
+.span5 {
+  width: 41.66666666666667%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000315}}
+.span6 {
+  width: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000316}}
+.span7 {
+  width: 58.333333333333336%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000317}}
+.span8 {
+  width: 66.66666666666666%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000318}}
+.span9 {
+  width: 75%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000319}}
+.span10 {
+  width: 83.33333333333334%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000320}}
+.span11 {
+  width: 91.66666666666666%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000321}}
+.span12 {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000323}}
+.offset1 {
+  margin-left: 8.333333333333332%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000324}}
+.offset2 {
+  margin-left: 16.666666666666664%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000325}}
+.offset3 {
+  margin-left: 25%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000326}}
+.offset4 {
+  margin-left: 33.33333333333333%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000327}}
+.offset5 {
+  margin-left: 41.66666666666667%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000328}}
+.offset6 {
+  margin-left: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000329}}
+.offset7 {
+  margin-left: 58.333333333333336%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000330}}
+.offset8 {
+  margin-left: 66.66666666666666%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000331}}
+.offset9 {
+  margin-left: 75%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000332}}
+.offset10 {
+  margin-left: 83.33333333333334%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000333}}
+.offset11 {
+  margin-left: 91.66666666666666%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/grid\.scss}line{font-family:\0000334}}
+.offset12 {
+  margin-left: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\000031}}
+.transition {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\000037}}
+.transition-fast {
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000313}}
+.clear {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000314}}
+.hide {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000315}}
+.hidden {
+  display: none !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000316}}
+.visible {
+  overflow: visible !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000317}}
+.auto {
+  overflow: auto !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000318}}
+.pointer {
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000319}}
+.vm {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000324}}
+.nowrap {
+  white-space: nowrap;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000325}}
+.text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000330}}
+.table-fixed {
+  table-layout: fixed;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000332}}
+.text-left {
+  text-align: left!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000332}}
+.text-right {
+  text-align: right!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000332}}
+.text-center {
+  text-align: center!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000335}}
+.left {
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000335}}
+.right {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000338}}
+.inline-top {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000338}}
+.inline-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/utilities_tbwa\/helper\.scss}line{font-family:\0000338}}
+.inline-baseline {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/_structure\.scss}line{font-family:\000034}}
+body {
+  font-family: Averta_regular;
+  font-size: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/_structure\.scss}line{font-family:\000038}}
+.font_regular {
+  font-family: Averta_regular;
+  font-size: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/_structure\.scss}line{font-family:\0000312}}
+.font_light {
+  font-family: Averta_light;
+  font-size: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/_structure\.scss}line{font-family:\0000317}}
+.banner {
+  width: 100%;
+  height: 60px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shaun\.Shang\/Sites\/specs\/sass\/_theme\.scss}line{font-family:\000033}}
+.banner {
+  background: #fecc00;
+}

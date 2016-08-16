@@ -1,0 +1,24 @@
+/* -------------------- Functions -------------------- */
+/* -------------------- END Functions -------------------- */
+body {
+  font-family: Averta_regular;
+  font-size: 16px;
+}
+
+.font_regular {
+  font-family: Averta_regular;
+  font-size: 1em;
+}
+
+.font_light {
+  font-family: Averta_light;
+  font-size: 1em;
+}
+
+.banner {
+  width: 100%;
+  height: 50px;
+}
+.banner .nav {
+  border: solid 1px red;
+}

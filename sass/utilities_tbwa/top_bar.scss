@@ -1,0 +1,86 @@
+.topbar {
+  @include size(100%, 40px);
+  position: absolute;
+  > *:not(.clear) {
+    height: 100%;
+    margin: 0 8px;
+  }
+  > div:first-child { margin-left: 0; }
+
+  /* ---------- Drawer ---------- */
+  .drawer {
+    @include size(40px, 100%);
+    > a {
+      @include size(100%, 100%);
+      display: block;
+    }
+  }
+  /* ---------- END Drawer ---------- */
+
+  /* ---------- Logo ---------- */
+  .logo {
+    padding: 0 8px;
+    a {
+      @include size(200px, 100%);
+      display: block;
+    }
+  }
+  /* ---------- END Logo ---------- */
+
+  /* ---------- Main Nav ---------- */
+  .main_nav {
+    > ul > li {
+      float: left;
+      height: 100%;
+      > a {
+        @include line-height(100%, 40px);
+        @include transition(0.4s);
+        display: block;
+        padding: 0 8px;
+        color: #FFFFFF;
+        &[class^="icon-"]:before,
+        &[class*=" icon-"]:before {
+          float: left;
+          font-size: 14px;
+        }
+        &:hover { background: $blue_600; }
+        span { margin: 0 5px; }
+      }
+      &.dropdown-container,
+      .dropdown-container {
+        > a:after {
+          @extend .inline-middle;
+          @include size(0, 0);
+          float: left;
+          content: "";
+          margin-top: 19px;
+          border: solid 4px transparent;
+          border-top-color: #FFFFFF;
+          border-bottom: none;
+        }
+        .dropdown {
+          > li a {
+            &[class^="icon-"]:before,
+            &[class*=" icon-"]:before {
+              width: 20px;
+            }
+            &:hover {
+              &, &[class^="icon-"]:before,
+              &, &[class*=" icon-"]:before {
+                color: #FFFFFF;
+              }
+            }
+          }
+        }
+      }
+    }
+    > ul { height: 100%; }
+  }
+  /* ---------- END Main Nav ---------- */
+
+  /* ---------- Global Tool ---------- */
+  .global_tool {
+    @extend .main_nav;
+  }
+  /* ---------- END Global Tool ---------- */
+}
