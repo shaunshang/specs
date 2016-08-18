@@ -4,15 +4,19 @@
 	src:url("Fonts/fb053a57-e3ba-4279-92f7-890ba31f5af5.eot?#iefix") format("eot"),url("Fonts/8459b584-29f5-454c-977f-c8ff7111d63a.woff2") format("woff2"),url("Fonts/6c21408f-7e66-4976-9069-5a55e61a2a25.woff") format("woff"),url("Fonts/1a33d36a-a8f5-4421-b4b2-7439543df473.ttf") format("truetype"),url("Fonts/c4047b0b-e64d-4398-ab1a-6a45fcb5894c.svg#c4047b0b-e64d-4398-ab1a-6a45fcb5894c") format("svg");
 }
 @font-face{
-	font-family:"Averta for TBWA W01 Bold";
-	src:url("Fonts/336bb834-89ca-421c-9757-5246d4ff0c46.eot?#iefix");
-	src:url("Fonts/336bb834-89ca-421c-9757-5246d4ff0c46.eot?#iefix") format("eot"),url("Fonts/b16f96a2-713b-443b-9f67-0d7296ec0bc8.woff2") format("woff2"),url("Fonts/4b1f2217-7678-465c-951a-3f34132f0527.woff") format("woff"),url("Fonts/400d46a5-6944-4b8d-8f2a-3cb9f2436f70.ttf") format("truetype"),url("Fonts/3fe0986a-20af-4451-b5de-4f652a6c4936.svg#3fe0986a-20af-4451-b5de-4f652a6c4936") format("svg");
-}
-@font-face{
 	font-family:"Averta for TBWA W01 Extra thin";
 	src:url("Fonts/482d1027-86c1-4d17-b263-100323efd9dd.eot?#iefix");
 	src:url("Fonts/482d1027-86c1-4d17-b263-100323efd9dd.eot?#iefix") format("eot"),url("Fonts/97a6976e-b766-4b56-996e-3ddb972f9220.woff2") format("woff2"),url("Fonts/74b97b69-5c24-4880-9c1c-ad034a03f709.woff") format("woff"),url("Fonts/78b61d23-7f06-4496-9874-8ff42565fc56.ttf") format("truetype"),url("Fonts/a29f8adf-d263-479a-b4a6-679cfd8fb34c.svg#a29f8adf-d263-479a-b4a6-679cfd8fb34c") format("svg");
 }*/
+@font-face{
+	font-family:"Averta_bold";
+	src: url("fonts/averta_bold.eot?#iefix");
+	src: url("fonts/averta_bold.eot?#iefix") format("eot"),
+			 url("fonts/averta_bold.woff2") format("woff2"),
+			 url("fonts/averta_bold.woff") format("woff"),
+			 url("fonts/averta_bold.ttf") format("truetype"),
+			 url("fonts/averta_bold.svg#averta_bold") format("svg");
+}
 @font-face{
 	font-family:"Averta_light";
 	src: url("fonts/averta_light.eot?#iefix");

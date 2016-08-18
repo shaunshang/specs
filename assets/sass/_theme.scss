@@ -1,0 +1,41 @@
+$brand-red: #D21F26;
+$brand-black: #333333;
+$brand-text: #626262;
+
+/* ==================== Banner ==================== */
+.banner {
+	background: $brand-black;
+	.nav_trigger { background: $brand-red url(../images/logo_icon.png) no-repeat center center; }
+	.logo { background: url(../images/logo_text.png) no-repeat 20px center; }
+}
+/* ==================== END Banner ==================== */
+
+/* ==================== Navigation ==================== */
+.nav_main {
+	a {
+		color: $brand-text;
+		&:hover { color: $brand-black; }
+	}
+}
+/* ==================== END Navigation ==================== */
+
+.maincontent {
+}
+header {
+	@include font(30px, 700);
+	@include line-height(40px, 40px);
+	margin: 0 10px;
+	color: $brand-black;
+}
+.content_table {
+	border-left: solid 4px $brand-red;
+	li a {
+		color: $brand-red;
+	}
+}
+/* ==================== Temporary Layer ==================== */
+.temp {
+	.nav { background: #FFFFFF; }
+	.temp_mask { background: rgba(0,0,0,.2); }
+}
+/* ==================== END Temporary Layer ==================== */

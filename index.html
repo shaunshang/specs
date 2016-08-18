@@ -3,21 +3,59 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Factory Tools Specs</title>
-	<link rel="stylesheet" href="css/jquery-ui.css" />
-	<link rel="stylesheet" href="css/iconfont.css" />
-	<link rel="stylesheet" href="css/customfont.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<script src="js/jquery-3.1.0.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/style.js"></script>
+	<link rel="stylesheet" href="assets/css/jquery-ui.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<script src="assets/js/jquery-3.1.0.min.js"></script>
+	<script src="assets/js/jquery-ui.min.js"></script>
+	<script src="assets/js/temp-trigger.js"></script>
+	<script src="assets/js/navigation.js"></script>
+	<script src="assets/js/style.js"></script>
 </head>
 <body>
 	<div class="container">
 		<div class="banner">
-			<div class="nav"></div>
+			<a href="javascript:;" class="temp_trigger nav_trigger"></a>
 			<div class="logo"></div>
 		</div>
-		<div class="maincontent"></div>
+		<div class="maincontent">
+			<iframe id="iframe" src="" frameborder="0" width="100%" height="100%"></iframe>
+		</div>
+		<div class="temp">
+			<div class="temp_item nav" data-easy-close="true">
+				<nav class="nav_main">
+					<a href="javascript:;" class="nav_main_item active">Style</a>
+					<nav class="nav_sub">
+						<a href="javascript:;" data-url="views/style/color.html" class="nav_sub_item">Color</a>
+						<a href="javascript:;" data-url="views/style/typo.html" class="nav_sub_item">Typography</a>
+					</nav>
+					<a href="javascript:;" class="nav_main_item">Layout</a>
+					<nav class="nav_sub">
+						<a href="javascript:;" data-url="views/layout/structure.html" class="nav_sub_item">Structure</a>
+						<a href="javascript:;" data-url="views/layout/res_grid.html" class="nav_sub_item">Responsive Grid</a>
+					</nav>
+					<a href="javascript:;" class="nav_main_item">Components</a>
+					<nav class="nav_sub">
+						<a href="javascript:;" data-url="views/components/buttons.html" class="nav_sub_item">Buttons</a>
+						<a href="javascript:;" data-url="views/components/tabs.html" class="nav_sub_item">Tabs</a>
+						<a href="javascript:;" data-url="views/components/datatables.html" class="nav_sub_item">Data Tables</a>
+						<a href="javascript:;" data-url="views/components/dialog.html" class="nav_sub_item">Dialog</a>
+						<a href="javascript:;" data-url="views/components/list.html" class="nav_sub_item">List</a>
+						<a href="javascript:;" data-url="views/components/menus.html" class="nav_sub_item">Menus</a>
+						<a href="javascript:;" data-url="views/components/selection.html" class="nav_sub_item">Selection Controls</a>
+						<a href="javascript:;" data-url="views/components/steppers.html" class="nav_sub_item">Steppers</a>
+						<a href="javascript:;" data-url="views/components/textfields.html" class="nav_sub_item">Text fields</a>
+						<a href="javascript:;" data-url="views/components/tooltips.html" class="nav_sub_item">Tooltips</a>
+					</nav>
+					<a href="javascript:;" class="nav_main_item">Patterns</a>
+					<nav class="nav_sub">
+						<a href="javascript:;" data-url="views/patterns/emptystates.html" class="nav_sub_item">Empty States</a>
+						<a href="javascript:;" data-url="views/patterns/errors.html" class="nav_sub_item">Errors</a>
+						<a href="javascript:;" data-url="views/patterns/navigation.html" class="nav_sub_item">Navigation</a>
+					</nav>
+				</nav>
+			</div>
+			<div class="temp_mask"></div>
+		</div>
 	</div>
 </body>
 </html>

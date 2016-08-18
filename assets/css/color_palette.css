@@ -1,0 +1,1259 @@
+/* -------------------- Functions -------------------- */
+/* -------------------- END Functions -------------------- */
+.transition {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.transition-fast {
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.clear {
+  clear: both;
+}
+
+.hide {
+  display: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  overflow: visible !important;
+}
+
+.auto {
+  overflow: auto !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.vm {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+}
+
+.nowrap, .color_palette .color_palette-item > li span {
+  white-space: nowrap;
+}
+
+.text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.table-fixed {
+  table-layout: fixed;
+}
+
+.text-left {
+  text-align: left!important;
+}
+
+.text-right {
+  text-align: right!important;
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.inline-top {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.inline-middle, .color_palette .color_palette-item > li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.inline-baseline {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.color_palette {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.color_palette .color_palette-item {
+  margin: 32px 10px;
+}
+.color_palette .color_palette-item > li {
+  width: 100%;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 40px;
+  padding: 0 8px;
+}
+.color_palette .color_palette-item > li span {
+  width: 30%;
+  height: 100%;
+}
+.color_palette.primary_colors li.red-50 {
+  background: #FFEBEE;
+}
+.color_palette.primary_colors li.red-100 {
+  background: #FFCDD2;
+}
+.color_palette.primary_colors li.red-200 {
+  background: #EF9A9A;
+}
+.color_palette.primary_colors li.red-300 {
+  background: #E57373;
+}
+.color_palette.primary_colors li.red-400 {
+  background: #EF5350;
+}
+.color_palette.primary_colors li.red-500 {
+  background: #F44336;
+}
+.color_palette.primary_colors li.red-600 {
+  background: #E53935;
+}
+.color_palette.primary_colors li.red-700 {
+  background: #D32F2F;
+}
+.color_palette.primary_colors li.red-800 {
+  background: #C62828;
+}
+.color_palette.primary_colors li.red-900 {
+  background: #B71C1C;
+}
+.color_palette.primary_colors li.pink-50 {
+  background: #FCE4EC;
+}
+.color_palette.primary_colors li.pink-100 {
+  background: #F8BBD0;
+}
+.color_palette.primary_colors li.pink-200 {
+  background: #F48FB1;
+}
+.color_palette.primary_colors li.pink-300 {
+  background: #F06292;
+}
+.color_palette.primary_colors li.pink-400 {
+  background: #EC407A;
+}
+.color_palette.primary_colors li.pink-500 {
+  background: #E91E63;
+}
+.color_palette.primary_colors li.pink-600 {
+  background: #D81B60;
+}
+.color_palette.primary_colors li.pink-700 {
+  background: #C2185B;
+}
+.color_palette.primary_colors li.pink-800 {
+  background: #AD1457;
+}
+.color_palette.primary_colors li.pink-900 {
+  background: #880E4F;
+}
+.color_palette.primary_colors li.purple-50 {
+  background: #F3E5F5;
+}
+.color_palette.primary_colors li.purple-100 {
+  background: #E1BEE7;
+}
+.color_palette.primary_colors li.purple-200 {
+  background: #CE93D8;
+}
+.color_palette.primary_colors li.purple-300 {
+  background: #BA68C8;
+}
+.color_palette.primary_colors li.purple-400 {
+  background: #AB47BC;
+}
+.color_palette.primary_colors li.purple-500 {
+  background: #9C27B0;
+}
+.color_palette.primary_colors li.purple-600 {
+  background: #8E24AA;
+}
+.color_palette.primary_colors li.purple-700 {
+  background: #7B1FA2;
+}
+.color_palette.primary_colors li.purple-800 {
+  background: #6A1B9A;
+}
+.color_palette.primary_colors li.purple-900 {
+  background: #4A148C;
+}
+.color_palette.primary_colors li.deep_purple-50 {
+  background: #EDE7F6;
+}
+.color_palette.primary_colors li.deep_purple-100 {
+  background: #D1C4E9;
+}
+.color_palette.primary_colors li.deep_purple-200 {
+  background: #B39DDB;
+}
+.color_palette.primary_colors li.deep_purple-300 {
+  background: #9575CD;
+}
+.color_palette.primary_colors li.deep_purple-400 {
+  background: #7E57C2;
+}
+.color_palette.primary_colors li.deep_purple-500 {
+  background: #673AB7;
+}
+.color_palette.primary_colors li.deep_purple-600 {
+  background: #5E35B1;
+}
+.color_palette.primary_colors li.deep_purple-700 {
+  background: #512DA8;
+}
+.color_palette.primary_colors li.deep_purple-800 {
+  background: #4527A0;
+}
+.color_palette.primary_colors li.deep_purple-900 {
+  background: #311B92;
+}
+.color_palette.primary_colors li.indigo-50 {
+  background: #E8EAF6;
+}
+.color_palette.primary_colors li.indigo-100 {
+  background: #C5CAE9;
+}
+.color_palette.primary_colors li.indigo-200 {
+  background: #9FA8DA;
+}
+.color_palette.primary_colors li.indigo-300 {
+  background: #7986CB;
+}
+.color_palette.primary_colors li.indigo-400 {
+  background: #5C6BC0;
+}
+.color_palette.primary_colors li.indigo-500 {
+  background: #3F51B5;
+}
+.color_palette.primary_colors li.indigo-600 {
+  background: #3949AB;
+}
+.color_palette.primary_colors li.indigo-700 {
+  background: #303F9F;
+}
+.color_palette.primary_colors li.indigo-800 {
+  background: #283593;
+}
+.color_palette.primary_colors li.indigo-900 {
+  background: #1A237E;
+}
+.color_palette.primary_colors li.blue-50 {
+  background: #E3F2FD;
+}
+.color_palette.primary_colors li.blue-100 {
+  background: #BBDEFB;
+}
+.color_palette.primary_colors li.blue-200 {
+  background: #90CAF9;
+}
+.color_palette.primary_colors li.blue-300 {
+  background: #64B5F6;
+}
+.color_palette.primary_colors li.blue-400 {
+  background: #42A5F5;
+}
+.color_palette.primary_colors li.blue-500 {
+  background: #2196F3;
+}
+.color_palette.primary_colors li.blue-600 {
+  background: #1E88E5;
+}
+.color_palette.primary_colors li.blue-700 {
+  background: #1976D2;
+}
+.color_palette.primary_colors li.blue-800 {
+  background: #1565C0;
+}
+.color_palette.primary_colors li.blue-900 {
+  background: #0D47A1;
+}
+.color_palette.primary_colors li.light_blue-50 {
+  background: #E1F5FE;
+}
+.color_palette.primary_colors li.light_blue-100 {
+  background: #B3E5FC;
+}
+.color_palette.primary_colors li.light_blue-200 {
+  background: #81D4FA;
+}
+.color_palette.primary_colors li.light_blue-300 {
+  background: #4FC3F7;
+}
+.color_palette.primary_colors li.light_blue-400 {
+  background: #29B6F6;
+}
+.color_palette.primary_colors li.light_blue-500 {
+  background: #03A9F4;
+}
+.color_palette.primary_colors li.light_blue-600 {
+  background: #039BE5;
+}
+.color_palette.primary_colors li.light_blue-700 {
+  background: #0288D1;
+}
+.color_palette.primary_colors li.light_blue-800 {
+  background: #0277BD;
+}
+.color_palette.primary_colors li.light_blue-900 {
+  background: #01579B;
+}
+.color_palette.primary_colors li.cyan-50 {
+  background: #E0F7FA;
+}
+.color_palette.primary_colors li.cyan-100 {
+  background: #B2EBF2;
+}
+.color_palette.primary_colors li.cyan-200 {
+  background: #80DEEA;
+}
+.color_palette.primary_colors li.cyan-300 {
+  background: #4DD0E1;
+}
+.color_palette.primary_colors li.cyan-400 {
+  background: #26C6DA;
+}
+.color_palette.primary_colors li.cyan-500 {
+  background: #00BCD4;
+}
+.color_palette.primary_colors li.cyan-600 {
+  background: #00ACC1;
+}
+.color_palette.primary_colors li.cyan-700 {
+  background: #0097A7;
+}
+.color_palette.primary_colors li.cyan-800 {
+  background: #00838F;
+}
+.color_palette.primary_colors li.cyan-900 {
+  background: #006064;
+}
+.color_palette.primary_colors li.teal-50 {
+  background: #E0F2F1;
+}
+.color_palette.primary_colors li.teal-100 {
+  background: #B2DFDB;
+}
+.color_palette.primary_colors li.teal-200 {
+  background: #80CBC4;
+}
+.color_palette.primary_colors li.teal-300 {
+  background: #4DB6AC;
+}
+.color_palette.primary_colors li.teal-400 {
+  background: #26A69A;
+}
+.color_palette.primary_colors li.teal-500 {
+  background: #009688;
+}
+.color_palette.primary_colors li.teal-600 {
+  background: #00897B;
+}
+.color_palette.primary_colors li.teal-700 {
+  background: #00796B;
+}
+.color_palette.primary_colors li.teal-800 {
+  background: #00695C;
+}
+.color_palette.primary_colors li.teal-900 {
+  background: #004D40;
+}
+.color_palette.primary_colors li.green-50 {
+  background: #E8F5E9;
+}
+.color_palette.primary_colors li.green-100 {
+  background: #C8E6C9;
+}
+.color_palette.primary_colors li.green-200 {
+  background: #A5D6A7;
+}
+.color_palette.primary_colors li.green-300 {
+  background: #81C784;
+}
+.color_palette.primary_colors li.green-400 {
+  background: #66BB6A;
+}
+.color_palette.primary_colors li.green-500 {
+  background: #4CAF50;
+}
+.color_palette.primary_colors li.green-600 {
+  background: #43A047;
+}
+.color_palette.primary_colors li.green-700 {
+  background: #388E3C;
+}
+.color_palette.primary_colors li.green-800 {
+  background: #2E7D32;
+}
+.color_palette.primary_colors li.green-900 {
+  background: #1B5E20;
+}
+.color_palette.primary_colors li.light_green-50 {
+  background: #F1F8E9;
+}
+.color_palette.primary_colors li.light_green-100 {
+  background: #DCEDC8;
+}
+.color_palette.primary_colors li.light_green-200 {
+  background: #C5E1A5;
+}
+.color_palette.primary_colors li.light_green-300 {
+  background: #AED581;
+}
+.color_palette.primary_colors li.light_green-400 {
+  background: #9CCC65;
+}
+.color_palette.primary_colors li.light_green-500 {
+  background: #8BC34A;
+}
+.color_palette.primary_colors li.light_green-600 {
+  background: #7CB342;
+}
+.color_palette.primary_colors li.light_green-700 {
+  background: #689F38;
+}
+.color_palette.primary_colors li.light_green-800 {
+  background: #558B2F;
+}
+.color_palette.primary_colors li.light_green-900 {
+  background: #33691E;
+}
+.color_palette.primary_colors li.lime-50 {
+  background: #F9FBE7;
+}
+.color_palette.primary_colors li.lime-100 {
+  background: #F0F4C3;
+}
+.color_palette.primary_colors li.lime-200 {
+  background: #E6EE9C;
+}
+.color_palette.primary_colors li.lime-300 {
+  background: #DCE775;
+}
+.color_palette.primary_colors li.lime-400 {
+  background: #D4E157;
+}
+.color_palette.primary_colors li.lime-500 {
+  background: #CDDC39;
+}
+.color_palette.primary_colors li.lime-600 {
+  background: #C0CA33;
+}
+.color_palette.primary_colors li.lime-700 {
+  background: #AFB42B;
+}
+.color_palette.primary_colors li.lime-800 {
+  background: #9E9D24;
+}
+.color_palette.primary_colors li.lime-900 {
+  background: #827717;
+}
+.color_palette.primary_colors li.yellow-50 {
+  background: #FFFDE7;
+}
+.color_palette.primary_colors li.yellow-100 {
+  background: #FFF9C4;
+}
+.color_palette.primary_colors li.yellow-200 {
+  background: #FFF59D;
+}
+.color_palette.primary_colors li.yellow-300 {
+  background: #FFF176;
+}
+.color_palette.primary_colors li.yellow-400 {
+  background: #FFEE58;
+}
+.color_palette.primary_colors li.yellow-500 {
+  background: #FFEB3B;
+}
+.color_palette.primary_colors li.yellow-600 {
+  background: #FDD835;
+}
+.color_palette.primary_colors li.yellow-700 {
+  background: #FBC02D;
+}
+.color_palette.primary_colors li.yellow-800 {
+  background: #F9A825;
+}
+.color_palette.primary_colors li.yellow-900 {
+  background: #F57F17;
+}
+.color_palette.primary_colors li.amber-50 {
+  background: #FFF8E1;
+}
+.color_palette.primary_colors li.amber-100 {
+  background: #FFECB3;
+}
+.color_palette.primary_colors li.amber-200 {
+  background: #FFE082;
+}
+.color_palette.primary_colors li.amber-300 {
+  background: #FFD54F;
+}
+.color_palette.primary_colors li.amber-400 {
+  background: #FFCA28;
+}
+.color_palette.primary_colors li.amber-500 {
+  background: #FFC107;
+}
+.color_palette.primary_colors li.amber-600 {
+  background: #FFB300;
+}
+.color_palette.primary_colors li.amber-700 {
+  background: #FFA000;
+}
+.color_palette.primary_colors li.amber-800 {
+  background: #FF8F00;
+}
+.color_palette.primary_colors li.amber-900 {
+  background: #FF6F00;
+}
+.color_palette.primary_colors li.orange-50 {
+  background: #FFF3E0;
+}
+.color_palette.primary_colors li.orange-100 {
+  background: #FFE0B2;
+}
+.color_palette.primary_colors li.orange-200 {
+  background: #FFCC80;
+}
+.color_palette.primary_colors li.orange-300 {
+  background: #FFB74D;
+}
+.color_palette.primary_colors li.orange-400 {
+  background: #FFA726;
+}
+.color_palette.primary_colors li.orange-500 {
+  background: #FF9800;
+}
+.color_palette.primary_colors li.orange-600 {
+  background: #FB8C00;
+}
+.color_palette.primary_colors li.orange-700 {
+  background: #F57C00;
+}
+.color_palette.primary_colors li.orange-800 {
+  background: #EF6C00;
+}
+.color_palette.primary_colors li.orange-900 {
+  background: #E65100;
+}
+.color_palette.primary_colors li.deep_orange-50 {
+  background: #FBE9E7;
+}
+.color_palette.primary_colors li.deep_orange-100 {
+  background: #FFCCBC;
+}
+.color_palette.primary_colors li.deep_orange-200 {
+  background: #FFAB91;
+}
+.color_palette.primary_colors li.deep_orange-300 {
+  background: #FF8A65;
+}
+.color_palette.primary_colors li.deep_orange-400 {
+  background: #FF7043;
+}
+.color_palette.primary_colors li.deep_orange-500 {
+  background: #FF5722;
+}
+.color_palette.primary_colors li.deep_orange-600 {
+  background: #F4511E;
+}
+.color_palette.primary_colors li.deep_orange-700 {
+  background: #E64A19;
+}
+.color_palette.primary_colors li.deep_orange-800 {
+  background: #D84315;
+}
+.color_palette.primary_colors li.deep_orange-900 {
+  background: #BF360C;
+}
+.color_palette.primary_colors li.brown-50 {
+  background: #EFEBE9;
+}
+.color_palette.primary_colors li.brown-100 {
+  background: #D7CCC8;
+}
+.color_palette.primary_colors li.brown-200 {
+  background: #BCAAA4;
+}
+.color_palette.primary_colors li.brown-300 {
+  background: #A1887F;
+}
+.color_palette.primary_colors li.brown-400 {
+  background: #8D6E63;
+}
+.color_palette.primary_colors li.brown-500 {
+  background: #795548;
+}
+.color_palette.primary_colors li.brown-600 {
+  background: #6D4C41;
+}
+.color_palette.primary_colors li.brown-700 {
+  background: #5D4037;
+}
+.color_palette.primary_colors li.brown-800 {
+  background: #4E342E;
+}
+.color_palette.primary_colors li.brown-900 {
+  background: #3E2723;
+}
+.color_palette.primary_colors li.grey-50 {
+  background: #FAFAFA;
+}
+.color_palette.primary_colors li.grey-100 {
+  background: #F5F5F5;
+}
+.color_palette.primary_colors li.grey-200 {
+  background: #EEEEEE;
+}
+.color_palette.primary_colors li.grey-300 {
+  background: #E0E0E0;
+}
+.color_palette.primary_colors li.grey-400 {
+  background: #BDBDBD;
+}
+.color_palette.primary_colors li.grey-500 {
+  background: #9E9E9E;
+}
+.color_palette.primary_colors li.grey-600 {
+  background: #757575;
+}
+.color_palette.primary_colors li.grey-700 {
+  background: #616161;
+}
+.color_palette.primary_colors li.grey-800 {
+  background: #424242;
+}
+.color_palette.primary_colors li.grey-900 {
+  background: #212121;
+}
+.color_palette.primary_colors li.blue_grey-50 {
+  background: #ECEFF1;
+}
+.color_palette.primary_colors li.blue_grey-100 {
+  background: #CFD8DC;
+}
+.color_palette.primary_colors li.blue_grey-200 {
+  background: #B0BEC5;
+}
+.color_palette.primary_colors li.blue_grey-300 {
+  background: #90A4AE;
+}
+.color_palette.primary_colors li.blue_grey-400 {
+  background: #78909C;
+}
+.color_palette.primary_colors li.blue_grey-500 {
+  background: #607D8B;
+}
+.color_palette.primary_colors li.blue_grey-600 {
+  background: #546E7A;
+}
+.color_palette.primary_colors li.blue_grey-700 {
+  background: #455A64;
+}
+.color_palette.primary_colors li.blue_grey-800 {
+  background: #37474F;
+}
+.color_palette.primary_colors li.blue_grey-900 {
+  background: #263238;
+}
+.color_palette.secondary_colors li.red-50 {
+  background: #FFEBEE;
+}
+.color_palette.secondary_colors li.red-100 {
+  background: #FFCDD2;
+}
+.color_palette.secondary_colors li.red-200 {
+  background: #EF9A9A;
+}
+.color_palette.secondary_colors li.red-300 {
+  background: #E57373;
+}
+.color_palette.secondary_colors li.red-400 {
+  background: #EF5350;
+}
+.color_palette.secondary_colors li.red-500 {
+  background: #F44336;
+}
+.color_palette.secondary_colors li.red-600 {
+  background: #E53935;
+}
+.color_palette.secondary_colors li.red-700 {
+  background: #D32F2F;
+}
+.color_palette.secondary_colors li.red-800 {
+  background: #C62828;
+}
+.color_palette.secondary_colors li.red-900 {
+  background: #B71C1C;
+}
+.color_palette.secondary_colors li.pink-50 {
+  background: #FCE4EC;
+}
+.color_palette.secondary_colors li.pink-100 {
+  background: #F8BBD0;
+}
+.color_palette.secondary_colors li.pink-200 {
+  background: #F48FB1;
+}
+.color_palette.secondary_colors li.pink-300 {
+  background: #F06292;
+}
+.color_palette.secondary_colors li.pink-400 {
+  background: #EC407A;
+}
+.color_palette.secondary_colors li.pink-500 {
+  background: #E91E63;
+}
+.color_palette.secondary_colors li.pink-600 {
+  background: #D81B60;
+}
+.color_palette.secondary_colors li.pink-700 {
+  background: #C2185B;
+}
+.color_palette.secondary_colors li.pink-800 {
+  background: #AD1457;
+}
+.color_palette.secondary_colors li.pink-900 {
+  background: #880E4F;
+}
+.color_palette.secondary_colors li.purple-50 {
+  background: #F3E5F5;
+}
+.color_palette.secondary_colors li.purple-100 {
+  background: #E1BEE7;
+}
+.color_palette.secondary_colors li.purple-200 {
+  background: #CE93D8;
+}
+.color_palette.secondary_colors li.purple-300 {
+  background: #BA68C8;
+}
+.color_palette.secondary_colors li.purple-400 {
+  background: #AB47BC;
+}
+.color_palette.secondary_colors li.purple-500 {
+  background: #9C27B0;
+}
+.color_palette.secondary_colors li.purple-600 {
+  background: #8E24AA;
+}
+.color_palette.secondary_colors li.purple-700 {
+  background: #7B1FA2;
+}
+.color_palette.secondary_colors li.purple-800 {
+  background: #6A1B9A;
+}
+.color_palette.secondary_colors li.purple-900 {
+  background: #4A148C;
+}
+.color_palette.secondary_colors li.deep_purple-50 {
+  background: #EDE7F6;
+}
+.color_palette.secondary_colors li.deep_purple-100 {
+  background: #D1C4E9;
+}
+.color_palette.secondary_colors li.deep_purple-200 {
+  background: #B39DDB;
+}
+.color_palette.secondary_colors li.deep_purple-300 {
+  background: #9575CD;
+}
+.color_palette.secondary_colors li.deep_purple-400 {
+  background: #7E57C2;
+}
+.color_palette.secondary_colors li.deep_purple-500 {
+  background: #673AB7;
+}
+.color_palette.secondary_colors li.deep_purple-600 {
+  background: #5E35B1;
+}
+.color_palette.secondary_colors li.deep_purple-700 {
+  background: #512DA8;
+}
+.color_palette.secondary_colors li.deep_purple-800 {
+  background: #4527A0;
+}
+.color_palette.secondary_colors li.deep_purple-900 {
+  background: #311B92;
+}
+.color_palette.secondary_colors li.indigo-50 {
+  background: #E8EAF6;
+}
+.color_palette.secondary_colors li.indigo-100 {
+  background: #C5CAE9;
+}
+.color_palette.secondary_colors li.indigo-200 {
+  background: #9FA8DA;
+}
+.color_palette.secondary_colors li.indigo-300 {
+  background: #7986CB;
+}
+.color_palette.secondary_colors li.indigo-400 {
+  background: #5C6BC0;
+}
+.color_palette.secondary_colors li.indigo-500 {
+  background: #3F51B5;
+}
+.color_palette.secondary_colors li.indigo-600 {
+  background: #3949AB;
+}
+.color_palette.secondary_colors li.indigo-700 {
+  background: #303F9F;
+}
+.color_palette.secondary_colors li.indigo-800 {
+  background: #283593;
+}
+.color_palette.secondary_colors li.indigo-900 {
+  background: #1A237E;
+}
+.color_palette.secondary_colors li.blue-50 {
+  background: #E3F2FD;
+}
+.color_palette.secondary_colors li.blue-100 {
+  background: #BBDEFB;
+}
+.color_palette.secondary_colors li.blue-200 {
+  background: #90CAF9;
+}
+.color_palette.secondary_colors li.blue-300 {
+  background: #64B5F6;
+}
+.color_palette.secondary_colors li.blue-400 {
+  background: #42A5F5;
+}
+.color_palette.secondary_colors li.blue-500 {
+  background: #2196F3;
+}
+.color_palette.secondary_colors li.blue-600 {
+  background: #1E88E5;
+}
+.color_palette.secondary_colors li.blue-700 {
+  background: #1976D2;
+}
+.color_palette.secondary_colors li.blue-800 {
+  background: #1565C0;
+}
+.color_palette.secondary_colors li.blue-900 {
+  background: #0D47A1;
+}
+.color_palette.secondary_colors li.light_blue-50 {
+  background: #E1F5FE;
+}
+.color_palette.secondary_colors li.light_blue-100 {
+  background: #B3E5FC;
+}
+.color_palette.secondary_colors li.light_blue-200 {
+  background: #81D4FA;
+}
+.color_palette.secondary_colors li.light_blue-300 {
+  background: #4FC3F7;
+}
+.color_palette.secondary_colors li.light_blue-400 {
+  background: #29B6F6;
+}
+.color_palette.secondary_colors li.light_blue-500 {
+  background: #03A9F4;
+}
+.color_palette.secondary_colors li.light_blue-600 {
+  background: #039BE5;
+}
+.color_palette.secondary_colors li.light_blue-700 {
+  background: #0288D1;
+}
+.color_palette.secondary_colors li.light_blue-800 {
+  background: #0277BD;
+}
+.color_palette.secondary_colors li.light_blue-900 {
+  background: #01579B;
+}
+.color_palette.secondary_colors li.cyan-50 {
+  background: #E0F7FA;
+}
+.color_palette.secondary_colors li.cyan-100 {
+  background: #B2EBF2;
+}
+.color_palette.secondary_colors li.cyan-200 {
+  background: #80DEEA;
+}
+.color_palette.secondary_colors li.cyan-300 {
+  background: #4DD0E1;
+}
+.color_palette.secondary_colors li.cyan-400 {
+  background: #26C6DA;
+}
+.color_palette.secondary_colors li.cyan-500 {
+  background: #00BCD4;
+}
+.color_palette.secondary_colors li.cyan-600 {
+  background: #00ACC1;
+}
+.color_palette.secondary_colors li.cyan-700 {
+  background: #0097A7;
+}
+.color_palette.secondary_colors li.cyan-800 {
+  background: #00838F;
+}
+.color_palette.secondary_colors li.cyan-900 {
+  background: #006064;
+}
+.color_palette.secondary_colors li.teal-50 {
+  background: #E0F2F1;
+}
+.color_palette.secondary_colors li.teal-100 {
+  background: #B2DFDB;
+}
+.color_palette.secondary_colors li.teal-200 {
+  background: #80CBC4;
+}
+.color_palette.secondary_colors li.teal-300 {
+  background: #4DB6AC;
+}
+.color_palette.secondary_colors li.teal-400 {
+  background: #26A69A;
+}
+.color_palette.secondary_colors li.teal-500 {
+  background: #009688;
+}
+.color_palette.secondary_colors li.teal-600 {
+  background: #00897B;
+}
+.color_palette.secondary_colors li.teal-700 {
+  background: #00796B;
+}
+.color_palette.secondary_colors li.teal-800 {
+  background: #00695C;
+}
+.color_palette.secondary_colors li.teal-900 {
+  background: #004D40;
+}
+.color_palette.secondary_colors li.green-50 {
+  background: #E8F5E9;
+}
+.color_palette.secondary_colors li.green-100 {
+  background: #C8E6C9;
+}
+.color_palette.secondary_colors li.green-200 {
+  background: #A5D6A7;
+}
+.color_palette.secondary_colors li.green-300 {
+  background: #81C784;
+}
+.color_palette.secondary_colors li.green-400 {
+  background: #66BB6A;
+}
+.color_palette.secondary_colors li.green-500 {
+  background: #4CAF50;
+}
+.color_palette.secondary_colors li.green-600 {
+  background: #43A047;
+}
+.color_palette.secondary_colors li.green-700 {
+  background: #388E3C;
+}
+.color_palette.secondary_colors li.green-800 {
+  background: #2E7D32;
+}
+.color_palette.secondary_colors li.green-900 {
+  background: #1B5E20;
+}
+.color_palette.secondary_colors li.light_green-50 {
+  background: #F1F8E9;
+}
+.color_palette.secondary_colors li.light_green-100 {
+  background: #DCEDC8;
+}
+.color_palette.secondary_colors li.light_green-200 {
+  background: #C5E1A5;
+}
+.color_palette.secondary_colors li.light_green-300 {
+  background: #AED581;
+}
+.color_palette.secondary_colors li.light_green-400 {
+  background: #9CCC65;
+}
+.color_palette.secondary_colors li.light_green-500 {
+  background: #8BC34A;
+}
+.color_palette.secondary_colors li.light_green-600 {
+  background: #7CB342;
+}
+.color_palette.secondary_colors li.light_green-700 {
+  background: #689F38;
+}
+.color_palette.secondary_colors li.light_green-800 {
+  background: #558B2F;
+}
+.color_palette.secondary_colors li.light_green-900 {
+  background: #33691E;
+}
+.color_palette.secondary_colors li.lime-50 {
+  background: #F9FBE7;
+}
+.color_palette.secondary_colors li.lime-100 {
+  background: #F0F4C3;
+}
+.color_palette.secondary_colors li.lime-200 {
+  background: #E6EE9C;
+}
+.color_palette.secondary_colors li.lime-300 {
+  background: #DCE775;
+}
+.color_palette.secondary_colors li.lime-400 {
+  background: #D4E157;
+}
+.color_palette.secondary_colors li.lime-500 {
+  background: #CDDC39;
+}
+.color_palette.secondary_colors li.lime-600 {
+  background: #C0CA33;
+}
+.color_palette.secondary_colors li.lime-700 {
+  background: #AFB42B;
+}
+.color_palette.secondary_colors li.lime-800 {
+  background: #9E9D24;
+}
+.color_palette.secondary_colors li.lime-900 {
+  background: #827717;
+}
+.color_palette.secondary_colors li.yellow-50 {
+  background: #FFFDE7;
+}
+.color_palette.secondary_colors li.yellow-100 {
+  background: #FFF9C4;
+}
+.color_palette.secondary_colors li.yellow-200 {
+  background: #FFF59D;
+}
+.color_palette.secondary_colors li.yellow-300 {
+  background: #FFF176;
+}
+.color_palette.secondary_colors li.yellow-400 {
+  background: #FFEE58;
+}
+.color_palette.secondary_colors li.yellow-500 {
+  background: #FFEB3B;
+}
+.color_palette.secondary_colors li.yellow-600 {
+  background: #FDD835;
+}
+.color_palette.secondary_colors li.yellow-700 {
+  background: #FBC02D;
+}
+.color_palette.secondary_colors li.yellow-800 {
+  background: #F9A825;
+}
+.color_palette.secondary_colors li.yellow-900 {
+  background: #F57F17;
+}
+.color_palette.secondary_colors li.amber-50 {
+  background: #FFF8E1;
+}
+.color_palette.secondary_colors li.amber-100 {
+  background: #FFECB3;
+}
+.color_palette.secondary_colors li.amber-200 {
+  background: #FFE082;
+}
+.color_palette.secondary_colors li.amber-300 {
+  background: #FFD54F;
+}
+.color_palette.secondary_colors li.amber-400 {
+  background: #FFCA28;
+}
+.color_palette.secondary_colors li.amber-500 {
+  background: #FFC107;
+}
+.color_palette.secondary_colors li.amber-600 {
+  background: #FFB300;
+}
+.color_palette.secondary_colors li.amber-700 {
+  background: #FFA000;
+}
+.color_palette.secondary_colors li.amber-800 {
+  background: #FF8F00;
+}
+.color_palette.secondary_colors li.amber-900 {
+  background: #FF6F00;
+}
+.color_palette.secondary_colors li.orange-50 {
+  background: #FFF3E0;
+}
+.color_palette.secondary_colors li.orange-100 {
+  background: #FFE0B2;
+}
+.color_palette.secondary_colors li.orange-200 {
+  background: #FFCC80;
+}
+.color_palette.secondary_colors li.orange-300 {
+  background: #FFB74D;
+}
+.color_palette.secondary_colors li.orange-400 {
+  background: #FFA726;
+}
+.color_palette.secondary_colors li.orange-500 {
+  background: #FF9800;
+}
+.color_palette.secondary_colors li.orange-600 {
+  background: #FB8C00;
+}
+.color_palette.secondary_colors li.orange-700 {
+  background: #F57C00;
+}
+.color_palette.secondary_colors li.orange-800 {
+  background: #EF6C00;
+}
+.color_palette.secondary_colors li.orange-900 {
+  background: #E65100;
+}
+.color_palette.secondary_colors li.deep_orange-50 {
+  background: #FBE9E7;
+}
+.color_palette.secondary_colors li.deep_orange-100 {
+  background: #FFCCBC;
+}
+.color_palette.secondary_colors li.deep_orange-200 {
+  background: #FFAB91;
+}
+.color_palette.secondary_colors li.deep_orange-300 {
+  background: #FF8A65;
+}
+.color_palette.secondary_colors li.deep_orange-400 {
+  background: #FF7043;
+}
+.color_palette.secondary_colors li.deep_orange-500 {
+  background: #FF5722;
+}
+.color_palette.secondary_colors li.deep_orange-600 {
+  background: #F4511E;
+}
+.color_palette.secondary_colors li.deep_orange-700 {
+  background: #E64A19;
+}
+.color_palette.secondary_colors li.deep_orange-800 {
+  background: #D84315;
+}
+.color_palette.secondary_colors li.deep_orange-900 {
+  background: #BF360C;
+}
+.color_palette.secondary_colors li.brown-50 {
+  background: #EFEBE9;
+}
+.color_palette.secondary_colors li.brown-100 {
+  background: #D7CCC8;
+}
+.color_palette.secondary_colors li.brown-200 {
+  background: #BCAAA4;
+}
+.color_palette.secondary_colors li.brown-300 {
+  background: #A1887F;
+}
+.color_palette.secondary_colors li.brown-400 {
+  background: #8D6E63;
+}
+.color_palette.secondary_colors li.brown-500 {
+  background: #795548;
+}
+.color_palette.secondary_colors li.brown-600 {
+  background: #6D4C41;
+}
+.color_palette.secondary_colors li.brown-700 {
+  background: #5D4037;
+}
+.color_palette.secondary_colors li.brown-800 {
+  background: #4E342E;
+}
+.color_palette.secondary_colors li.brown-900 {
+  background: #3E2723;
+}
+.color_palette.secondary_colors li.grey-50 {
+  background: #FAFAFA;
+}
+.color_palette.secondary_colors li.grey-100 {
+  background: #F5F5F5;
+}
+.color_palette.secondary_colors li.grey-200 {
+  background: #EEEEEE;
+}
+.color_palette.secondary_colors li.grey-300 {
+  background: #E0E0E0;
+}
+.color_palette.secondary_colors li.grey-400 {
+  background: #BDBDBD;
+}
+.color_palette.secondary_colors li.grey-500 {
+  background: #9E9E9E;
+}
+.color_palette.secondary_colors li.grey-600 {
+  background: #757575;
+}
+.color_palette.secondary_colors li.grey-700 {
+  background: #616161;
+}
+.color_palette.secondary_colors li.grey-800 {
+  background: #424242;
+}
+.color_palette.secondary_colors li.grey-900 {
+  background: #212121;
+}
+.color_palette.secondary_colors li.blue_grey-50 {
+  background: #ECEFF1;
+}
+.color_palette.secondary_colors li.blue_grey-100 {
+  background: #CFD8DC;
+}
+.color_palette.secondary_colors li.blue_grey-200 {
+  background: #B0BEC5;
+}
+.color_palette.secondary_colors li.blue_grey-300 {
+  background: #90A4AE;
+}
+.color_palette.secondary_colors li.blue_grey-400 {
+  background: #78909C;
+}
+.color_palette.secondary_colors li.blue_grey-500 {
+  background: #607D8B;
+}
+.color_palette.secondary_colors li.blue_grey-600 {
+  background: #546E7A;
+}
+.color_palette.secondary_colors li.blue_grey-700 {
+  background: #455A64;
+}
+.color_palette.secondary_colors li.blue_grey-800 {
+  background: #37474F;
+}
+.color_palette.secondary_colors li.blue_grey-900 {
+  background: #263238;
+}

@@ -1,0 +1,85 @@
+.font_bold { font-family: Averta_bold; }
+.font_light { font-family: Averta_light; }
+.font_regular { font-family: Averta_regular; }
+
+body {
+	font-family: Averta_regular;
+	font-size: 14px;
+}
+.container { overflow: auto; }
+
+/* ==================== Banner ==================== */
+.banner {
+	@extend .vm;
+	@include size(100%, 60px);
+	bottom: auto;
+	.nav_trigger {
+		@include size(60px, 60px);
+		float: left;
+		cursor: pointer;
+	}
+	.logo {
+		@include size(360px, 60px);
+		float: left;
+	}
+}
+/* ==================== END Banner ==================== */
+
+/* ==================== Navigation ==================== */
+.nav_main {
+	.nav_main_item {
+		@extend .font_bold;
+		@include line-height(30px, 30px);
+	}
+	.nav_sub {
+		display: none;
+		padding-left: 20px;
+		.nav_sub_item {
+			@include line-height(20px, 20px);
+		}
+	}
+	a { display: block; }
+}
+/* ==================== END Navigation ==================== */
+
+.maincontent {
+	@include size(100%, 100%);
+	@include box-sizing(border-box);
+	padding: 60px 0 0;
+}
+
+main { padding: 20px; }
+header {
+	@include font(30px, 700);
+	@include line-height(40px, 40px);
+	margin: 30px 10px 10px;
+}
+.content_table {
+	margin: 10px;
+	li a {
+		@include size(300px, 30px);
+		@include font(16px, 500);
+		display: block;
+		line-height: 30px;
+		padding: 0 20px;
+	}
+}
+/* ==================== Temporary Layer ==================== */
+.temp {
+	@include size(100%, 100%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	.temp_item {
+		position: absolute;
+		&.nav {
+			@include size(208px, 100%);
+			left: -241px;
+			padding: 16px;
+			overflow-y: auto;
+		}
+	}
+	.temp_mask { @include size(100%, 100%); }
+}
+/* ==================== END Temporary Layer ==================== */
