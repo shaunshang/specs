@@ -64,6 +64,13 @@ header {
 		padding: 0 20px;
 	}
 }
+article {
+	margin: 20px 0;
+}
+article p {
+	margin: 10px;
+	font-size: 14px;
+}
 /* ==================== Temporary Layer ==================== */
 .temp {
 	@include size(100%, 100%);

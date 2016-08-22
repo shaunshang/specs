@@ -1,0 +1,97 @@
+/* -------------------- Functions -------------------- */
+/* -------------------- END Functions -------------------- */
+.transition {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.transition-fast {
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.clear {
+  clear: both;
+}
+
+.hide {
+  display: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  overflow: visible !important;
+}
+
+.auto {
+  overflow: auto !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.vm {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.table-fixed {
+  table-layout: fixed;
+}
+
+.text-left {
+  text-align: left!important;
+}
+
+.text-right {
+  text-align: right!important;
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.inline-top {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.inline-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.inline-baseline {
+  display: inline-block;
+  vertical-align: baseline;
+}
