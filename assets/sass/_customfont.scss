@@ -1,56 +1,61 @@
-/*@font-face{
-	font-family:"Averta for TBWA W01 Black";
-	src:url("Fonts/fb053a57-e3ba-4279-92f7-890ba31f5af5.eot?#iefix");
-	src:url("Fonts/fb053a57-e3ba-4279-92f7-890ba31f5af5.eot?#iefix") format("eot"),url("Fonts/8459b584-29f5-454c-977f-c8ff7111d63a.woff2") format("woff2"),url("Fonts/6c21408f-7e66-4976-9069-5a55e61a2a25.woff") format("woff"),url("Fonts/1a33d36a-a8f5-4421-b4b2-7439543df473.ttf") format("truetype"),url("Fonts/c4047b0b-e64d-4398-ab1a-6a45fcb5894c.svg#c4047b0b-e64d-4398-ab1a-6a45fcb5894c") format("svg");
+/* ==================== AVERTA ==================== */
+@each $font-face in 'averta_bold', 'averta_light', 'averta_regular', 'averta_thin' {
+	@font-face {
+		font-family: #{$font-face};
+		src: url("fonts/#{$font-face}.eot?#iefix");
+		src: url("fonts/#{$font-face}.eot?#iefix") format("eot"),
+				 url("fonts/#{$font-face}.woff2") format("woff2"),
+				 url("fonts/#{$font-face}.woff") format("woff"),
+				 url("fonts/#{$font-face}.ttf") format("truetype"),
+				 url("fonts/#{$font-face}.svg#averta_bold") format("svg");
+	}
 }
-@font-face{
-	font-family:"Averta for TBWA W01 Extra thin";
-	src:url("Fonts/482d1027-86c1-4d17-b263-100323efd9dd.eot?#iefix");
-	src:url("Fonts/482d1027-86c1-4d17-b263-100323efd9dd.eot?#iefix") format("eot"),url("Fonts/97a6976e-b766-4b56-996e-3ddb972f9220.woff2") format("woff2"),url("Fonts/74b97b69-5c24-4880-9c1c-ad034a03f709.woff") format("woff"),url("Fonts/78b61d23-7f06-4496-9874-8ff42565fc56.ttf") format("truetype"),url("Fonts/a29f8adf-d263-479a-b4a6-679cfd8fb34c.svg#a29f8adf-d263-479a-b4a6-679cfd8fb34c") format("svg");
-}*/
-@font-face{
-	font-family:"Averta_bold";
-	src: url("fonts/averta_bold.eot?#iefix");
-	src: url("fonts/averta_bold.eot?#iefix") format("eot"),
-			 url("fonts/averta_bold.woff2") format("woff2"),
-			 url("fonts/averta_bold.woff") format("woff"),
-			 url("fonts/averta_bold.ttf") format("truetype"),
-			 url("fonts/averta_bold.svg#averta_bold") format("svg");
+/* ==================== END AVERTA ==================== */
+
+/* ==================== NOTO ==================== */
+@each $font-face in 'noto_bold', 'noto_light', 'noto_regular', 'noto_thin' {
+	@font-face {
+		font-family: #{$font-face};
+		src: url("fonts/#{$font-face}.otf");
+	}
 }
-@font-face{
-	font-family:"Averta_light";
-	src: url("fonts/averta_light.eot?#iefix");
-	src: url("fonts/averta_light.eot?#iefix") format("eot"),
-			 url("fonts/averta_light.woff2") format("woff2"),
-			 url("fonts/averta_light.woff") format("woff"),
-			 url("fonts/averta_light.ttf") format("truetype"),
-			 url("fonts/averta_light.svg#averta_light") format("svg");
+/* ==================== END NOTO ==================== */
+
+/* ==================== STYLE ==================== */
+$font-size: (
+	title: 		 26,
+	subtitle:  20,
+	body: 		 14,
+	caption: 	 12,
+	button: 	 14
+);
+@each $name, $size in $font-size {
+	.font_#{$name} {
+		font-size: #{$size+"px"};
+		line-height: #{($size+10)+"px"};
+	}
 }
-@font-face{
-	font-family:"Averta_regular";
-	src: url("fonts/averta_regular.eot?#iefix");
-	src: url("fonts/averta_regular.eot?#iefix") format("eot"),
-			 url("fonts/averta_regular.woff2") format("woff2"),
-			 url("fonts/averta_regular.woff") format("woff"),
-			 url("fonts/averta_regular.ttf") format("truetype"),
-			 url("fonts/averta_regular.svg#averta_regular") format("svg");
+.font_title,
+.font_subtitle,
+.font_body {
+	font-family: averta_regular;
+	text-transform: capitalize;
 }
-/*@font-face{
-	font-family:"Averta for TBWA W01 Semibold";
-	src:url("Fonts/be3d3544-c037-41c0-853a-5ec61084cb09.eot?#iefix");
-	src:url("Fonts/be3d3544-c037-41c0-853a-5ec61084cb09.eot?#iefix") format("eot"),url("Fonts/59bd606f-f42a-4e4c-b2bf-2f26e11a847d.woff2") format("woff2"),url("Fonts/d21a2ace-0bd2-44d6-b32b-4bfee0fd8da2.woff") format("woff"),url("Fonts/179a05ec-4a8b-4ba1-b1dd-a528ca16d08e.ttf") format("truetype"),url("Fonts/0d7e89ff-276c-49b9-acdb-ce08397e99a4.svg#0d7e89ff-276c-49b9-acdb-ce08397e99a4") format("svg");
+.font_caption {
+	font-family: averta_light;
+	font-style: italic;
+	text-transform: capitalize;
 }
-@font-face{
-	font-family:"Averta_thin";
-	src: url("fonts/averta_thin.eot?#iefix");
-	src: url("fonts/averta_thin.eot?#iefix") format("eot"),
-			 url("fonts/averta_thin.woff2") format("woff2"),
-			 url("fonts/averta_thin.woff") format("woff"),
-			 url("fonts/averta_thin.ttf") format("truetype"),
-			 url("fonts/averta_thin.svg#averta_thin") format("svg");
+.font_button {
+	font-family: averta_regular;
+	text-transform: uppercase;
 }
-@font-face{
-	font-family:"Averta for TBWA W01 Extrabold";
-	src:url("Fonts/bfd320d6-e1fd-4203-9ee8-779d0652926f.eot?#iefix");
-	src:url("Fonts/bfd320d6-e1fd-4203-9ee8-779d0652926f.eot?#iefix") format("eot"),url("Fonts/b7d47b20-6105-47fb-8e8a-fc51846761f1.woff2") format("woff2"),url("Fonts/e125365d-a121-4f8c-85cd-6d968a30d1fd.woff") format("woff"),url("Fonts/a96fc904-0e61-4f6c-891d-fa457bc6d1bd.ttf") format("truetype"),url("Fonts/713195d6-44c6-4d3e-8ec7-942bd1500b5d.svg#713195d6-44c6-4d3e-8ec7-942bd1500b5d") format("svg");
-}*/
+/* ==================== END STYLE ==================== */
+
+// /* ==================== LINE HEIGHT ==================== */
+// .font_title { line-height: 26px;}
+// .font_subtitle {}
+// .font_body {}
+// .font_caption {}
+// .font_button {}
+// /* ==================== END LINE HEIGHT ==================== */

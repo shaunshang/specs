@@ -1,6 +1,6 @@
 $brand-red: #D21F26;
 $brand-black: #333333;
-$brand-text: #626262;
+$brand-text: #212121;
 
 /* ==================== Banner ==================== */
 .banner {
@@ -22,9 +22,6 @@ $brand-text: #626262;
 .maincontent {
 }
 header {
-	@include font(30px, 700);
-	@include line-height(40px, 40px);
-	margin: 0 10px;
 	color: $brand-black;
 }
 .content_table {

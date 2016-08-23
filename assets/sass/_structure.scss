@@ -1,10 +1,16 @@
-.font_bold { font-family: Averta_bold; }
-.font_light { font-family: Averta_light; }
-.font_regular { font-family: Averta_regular; }
+.font_bold { font-family: averta_bold; }
+.font_light { font-family: averta_light; }
+.font_regular { font-family: averta_regular; }
+.font_thin { font-family: averta_thin; }
+.noto_bold { font-family: noto_bold; }
+.noto_light { font-family: noto_light; }
+.noto_regular { font-family: noto_regular; }
+.noto_thin { font-family: noto_thin; }
 
 body {
 	font-family: Averta_regular;
 	font-size: 14px;
+	line-height: 20px;
 }
 .container { overflow: auto; }
 
@@ -52,7 +58,7 @@ main { padding: 20px; }
 header {
 	@include font(30px, 700);
 	@include line-height(40px, 40px);
-	margin: 30px 10px 10px;
+	margin: 30px 0 10px;
 }
 .content_table {
 	margin: 10px;
@@ -66,11 +72,14 @@ header {
 }
 article {
 	margin: 20px 0;
+	> * { margin: 10px; }
+	p { font-size: 14px; }
+	ul.list {
+		list-style: inside disc;
+		li { padding: 8px 16px; }
+	}
 }
-article p {
-	margin: 10px;
-	font-size: 14px;
-}
+
 /* ==================== Temporary Layer ==================== */
 .temp {
 	@include size(100%, 100%);

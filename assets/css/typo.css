@@ -95,3 +95,13 @@
   display: inline-block;
   vertical-align: baseline;
 }
+
+article.typeface div:not(.clear) {
+  padding: 0 10px;
+  border: solid 1px #EFEFEF;
+  background: #FAFAFA;
+}
+
+article h2 {
+  margin: 10px 0;
+}
