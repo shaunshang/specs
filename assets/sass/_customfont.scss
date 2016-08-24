@@ -23,8 +23,12 @@
 
 /* ==================== STYLE ==================== */
 $font-size: (
-	title: 		 26,
-	subtitle:  20,
+	title: 		 46,
+	subtitle:  36,
+	heading1:	 30,
+	heading2:	 24,
+	heading3:  20,
+	heading4:  15,
 	body: 		 14,
 	caption: 	 12,
 	button: 	 14
@@ -35,11 +39,11 @@ $font-size: (
 		line-height: #{($size+10)+"px"};
 	}
 }
-.font_title,
-.font_subtitle,
-.font_body {
-	font-family: averta_regular;
-	text-transform: capitalize;
+@each $name in 'title', 'subtitle', 'heading1', 'heading2', 'heading3', 'heading4', 'body' {
+	.font_#{$name} {
+		font-family: averta_regular;
+		text-transform: capitalize;
+	}
 }
 .font_caption {
 	font-family: averta_light;

@@ -388,13 +388,33 @@ body {
 /* ==================== END NOTO ==================== */
 /* ==================== STYLE ==================== */
 .font_title {
-  font-size: 26px;
-  line-height: 36px;
+  font-size: 46px;
+  line-height: 56px;
 }
 
 .font_subtitle {
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.font_heading1 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.font_heading2 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.font_heading3 {
   font-size: 20px;
   line-height: 30px;
+}
+
+.font_heading4 {
+  font-size: 15px;
+  line-height: 25px;
 }
 
 .font_body {
@@ -412,8 +432,36 @@ body {
   line-height: 24px;
 }
 
-.font_title,
-.font_subtitle,
+.font_title {
+  font-family: averta_regular;
+  text-transform: capitalize;
+}
+
+.font_subtitle {
+  font-family: averta_regular;
+  text-transform: capitalize;
+}
+
+.font_heading1 {
+  font-family: averta_regular;
+  text-transform: capitalize;
+}
+
+.font_heading2 {
+  font-family: averta_regular;
+  text-transform: capitalize;
+}
+
+.font_heading3 {
+  font-family: averta_regular;
+  text-transform: capitalize;
+}
+
+.font_heading4 {
+  font-family: averta_regular;
+  text-transform: capitalize;
+}
+
 .font_body {
   font-family: averta_regular;
   text-transform: capitalize;
@@ -528,7 +576,7 @@ header {
   font-weight: 700;
   height: 40px;
   line-height: 40px;
-  margin: 30px 0 10px;
+  margin: 10px 0;
 }
 
 .content_table {
