@@ -1,0 +1,60 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Factory Tools Specs</title>
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.css" />
+	<link rel="stylesheet" href="../../assets/css/style.css" />
+	<link rel="stylesheet" href="../../assets/css/grid.css" />
+	<script src="../../assets/js/jquery-3.1.0.min.js"></script>
+	<script src="../../assets/js/jquery-ui.min.js"></script>
+	<script src="../../assets/js/temp-trigger.js"></script>
+	<script src="../../assets/js/navigation.js"></script>
+	<script src="../../assets/js/style.js"></script>
+</head>
+<body>
+	<main>
+		<header class="span10 font_regular">Grid</header>
+		<ul class="span10 content_table">
+			<li><a href="#col_width" class="font_bold">Column Width</a></li>
+			<li><a href="#margins" class="font_bold">Margins</a></li>
+		</ul>
+		<article>
+		  <p>
+		  	Factory tools are implement a <strong class="font_bold">12-column grid system</strong>. The reasons are:
+				<ul class="list">
+					<li>It creates consistency between layouts.</li>
+					<li>
+						It is flexible. It makes easy to evenly distribute a column, regardless of whether you want to create a 2 (spanning of 6), 3 (spanning of 4), or 4 (spanning of 3) content column.
+					</li>
+					<li>It is mobile ready.</li>
+				</ul>
+		  </p>
+		</article>
+		<article>
+			<header id="col_width" class="span10 font_heading2"><h5>Column Width</h5></header>
+			<div class="span5 left">
+				<p>
+					Column width is calculated in percentage. Since it is a 12-column grid system, it has a total of 12 spanning columns, and the width of each spanning column is calculated by using the number of its spanning and divide by 12.
+				</p>
+			</div>
+			<div class="span5 left" style="margin-left: 40px;">
+				<img src="../../assets/images/column_width.png" width="400px">
+			</div>
+			<div class="clear"></div>
+		</article>
+		<article>
+			<header id="margins" class="span10 font_heading2"><h5>Margins</h5></header>
+			<div class="span5 left">
+				<p>
+					The responsive grid also focuses on consistent margins. Margins follow a multiples of 8 in px, so they can be 8, 16, 24, etc. However, sometimes you may want to implement a flexible margin, instead of a fixed amount, on a column. In order to do that, we implement a responsive margin system, and give it a name called offset.
+				</p>
+			</div>
+			<div class="span5 left" style="margin-left: 40px;">
+				<img src="../../assets/images/margins.png" width="400px">
+			</div>
+			<div class="clear"></div>
+		</article>
+	</main>
+</body>
+</html>
