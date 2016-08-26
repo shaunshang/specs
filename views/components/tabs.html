@@ -5,7 +5,6 @@
 	<title>Factory Tools Specs</title>
 	<link rel="stylesheet" href="../../assets/css/jquery-ui.css" />
 	<link rel="stylesheet" href="../../assets/css/style.css" />
-	<link rel="stylesheet" href="../../assets/css/buttons.css" />
 	<script src="../../assets/js/jquery-3.1.0.min.js"></script>
 	<script src="../../assets/js/jquery-ui.min.js"></script>
 	<script src="../../assets/js/temp-trigger.js"></script>
@@ -14,28 +13,52 @@
 </head>
 <body>
 	<main>
-		<header class="span10 font_regular">Buttons</header>
+		<header class="span10 font_subtitle">Tabs</header>
 		<ul class="span10 content_table">
-			<li><a href="#introduction" class="font_bold">Introduction</a></li>
-			<li><a href="#button_style" class="font_bold">Choosing button style</a></li>
-			<li><a href="#style" class="font_bold">Style</a></li>
-			<li><a href="#buttons" class="font_bold">Buttons</a></li>
+			<li><a href="#introduction" class="font_bold">1. Introduction</a></li>
+			<li><a href="#usage" class="font_bold">2. Usage</a></li>
+			<li><a href="#specs" class="font_bold">3. Specs</a></li>
 		</ul>
 		<article>
-			<header id="introduction" class="span10 font_light"><h5>Introduction</h5></header>
-		  <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="introduction" class="span10 font_heading2"><h5>1. Introduction</h5></header>
+		  <p>
+		  	Tabs enable content organization at a high level, such as switching between views, data sets, or functional aspects of an app.
+		  </p>
+		  <p>
+				Present tabs as a single row above their associated content. Tab labels should succinctly describe the content within.
+			</p>
 		</article>
 		<article>
-			<header id="button_style" class="span10 font_light"><h5>Choosing button style</h5></header>
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="usage" class="span10 font_heading2"><h5>2. Usage</h5></header>
+			<div class="span5 left">
+				<p>
+					Don’t use tabs for carousels or pagination of content. Those use cases involve viewing content, not navigating between groups of content.
+				</p>
+				<p>Formatting specifications:</p>
+				<ul class="list">
+					<li>Present tabs as a single row. Wrap tab labels to a second line if needed, and then truncate.</li>
+					<li>Do not include a set of tabbed content within a tab.</li>
+					<li>Highlight the tab corresponding to the visible content.</li>
+					<li>Group tabs together hierarchically. Connect a group of tabs with its content.</li>
+					<li>Keep tabs adjacent to their content to maintain the relationship between the two.</li>
+				</ul>
+			</div>
+			<div class="span5 left"><img src="../../assets/images/tabs_1.png" alt=""></div>
+			<div class="clear"></div>
 		</article>
 		<article>
-			<header id="style" class="span10 font_light"><h5>Style</h5></header>
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
-		</article>
-		<article>
-			<header id="buttons" class="span10 font_light"><h5>Buttons</h5></header>
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="specs" class="span10 font_heading2"><h5>3. Specs</h5></header>
+			<div class="span5 left">
+				<ul class="list">
+					<li><b class="font_bold">Height:</b> 50px</li>
+					<li><b class="font_bold">Margin:</b> 8px in between, or 4px on both side</li>
+					<li><b class="font_bold">Padding:</b> 16px on both side</li>
+					<li><b class="font_bold">Indicator:</b> 6px</li>
+					<li><b class="font_bold">Text Alignment:</b> center</li>
+				</ul>
+			</div>
+			<div class="span5 left"><img src="../../assets/images/tabs_2.png" width="450px"></div>
+			<div class="clear"></div>
 		</article>
 	</main>
 </body>
