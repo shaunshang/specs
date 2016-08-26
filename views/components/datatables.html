@@ -5,7 +5,6 @@
 	<title>Factory Tools Specs</title>
 	<link rel="stylesheet" href="../../assets/css/jquery-ui.css" />
 	<link rel="stylesheet" href="../../assets/css/style.css" />
-	<link rel="stylesheet" href="../../assets/css/buttons.css" />
 	<script src="../../assets/js/jquery-3.1.0.min.js"></script>
 	<script src="../../assets/js/jquery-ui.min.js"></script>
 	<script src="../../assets/js/temp-trigger.js"></script>
@@ -14,28 +13,91 @@
 </head>
 <body>
 	<main>
-		<header class="span10 font_regular">Buttons</header>
+		<header class="span10 font_subtitle">Data Tables</header>
 		<ul class="span10 content_table">
-			<li><a href="#introduction" class="font_bold">Introduction</a></li>
-			<li><a href="#button_style" class="font_bold">Choosing button style</a></li>
-			<li><a href="#style" class="font_bold">Style</a></li>
-			<li><a href="#buttons" class="font_bold">Buttons</a></li>
+			<li><a href="#introduction" class="font_bold">1. Introduction</a></li>
+			<li><a href="#intraction" class="font_bold">2. Intraction</a></li>
+			<li><a href="#action_header" class="font_bold">3. Action Header</a></li>
+			<li><a href="#specs" class="font_bold">4. Specs</a></li>
 		</ul>
 		<article>
-			<header id="introduction" class="span10 font_light"><h5>Introduction</h5></header>
-		  <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="introduction" class="span10 font_heading1"><h5>1. Introduction</h5></header>
+			<div class="span10">
+				<p>
+			  	A data table contains a header row at the top that lists column names, followed by rows for data.
+			  </p>
+			  <p>
+			  	Checkboxes should accompany each row if the user needs to select or manipulate data.
+			  </p>
+			  <p>Data tables may include:</p>
+			  <ul class="list">
+			  	<li>Three or more columns of data</li>
+			  	<li>A corresponding visualization</li>
+			  	<li>The ability for users to query and manipulate data</li>
+			  </ul>
+			</div>
+		  <div class="span12">
+		  	<img src="../../assets/images/datatables_1.png" width="800px" style="display: block; margin: 0 auto; border: solid 1px #dedede">
+		  </div>
 		</article>
 		<article>
-			<header id="button_style" class="span10 font_light"><h5>Choosing button style</h5></header>
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="intraction" class="span10 font_heading1"><h5>2. Intraction</h5></header>
+			<div class="span10">
+				<ul class="list">
+					<li>Row hover: grey_200</li>
+					<li>Row selected: grey_100</li>
+					<li>Sorted: sorted column should have a darker text than unsorted columns</li>
+					<li>
+						Long column title: There are two options to handle this:
+						<ul class="list list-circle">
+							<li>Display the full column name and enable horizontal scrolling in the table container</li>
+							<li>Shorten the column name and display it in full on hover (with a tooltip)</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 		</article>
 		<article>
-			<header id="style" class="span10 font_light"><h5>Style</h5></header>
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="action_header" class="span10 font_heading1"><h5>3. Action Header</h5></header>
+			<div class="span10">
+				<p>
+					Some tables may require headers with actions instead of titles. In this case you may either:
+				</p>
+				<ul class="list">
+					<li>Display persistent actions</li>
+					<li>Display a contextual header that activates when items are selected</li>
+				</ul>
+			</div>
+			<div class="span12">
+		  	<img src="../../assets/images/datatables_2.png" width="800px" style="display: block; margin: 0 auto;">
+		  </div>
+		  <div class="span10">
+		  	<p>For Action buttons:</p>
+		  	<ul class="list">
+		  		<li>Use borderless buttons</li>
+		  		<li>Enable upon item selection</li>
+		  	</ul>
+		  </div>
 		</article>
 		<article>
-			<header id="buttons" class="span10 font_light"><h5>Buttons</h5></header>
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="specs" class="span10 font_heading1"><h5>4. Specs</h5></header>
+			<div class="span3 left">
+				<ul class="list">
+					<li>
+						<b class="font_bold">Row height:</b>
+						<ul class="list list-order">
+							<li>64px</li>
+							<li>56px</li>
+							<li>48px</li>
+						</ul>
+					</li>
+					<li><b class="font_bold">Column padding:</b> 0px 8px</li>
+				</ul>
+			</div>
+			<div class="span5 left">
+				<img src="../../assets/images/datatables_3.png" width="700px" style="display: block; margin: 0 auto;">
+			</div>
+			<div class="clear"></div>
 		</article>
 	</main>
 </body>

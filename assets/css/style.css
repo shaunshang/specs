@@ -597,7 +597,6 @@ article {
 }
 article > * {
   margin: 10px;
-  overflow: hidden;
 }
 article p {
   font-size: 14px;
@@ -613,6 +612,9 @@ article ul.list ul li {
 }
 article ul.list-circle {
   list-style: inside circle;
+}
+article ul.list-order {
+  list-style: inside decimal;
 }
 
 /* ==================== Temporary Layer ==================== */
@@ -677,7 +679,7 @@ header {
   background: #FFFFFF;
 }
 .temp .temp_mask {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 /* ==================== END Temporary Layer ==================== */
