@@ -72,12 +72,17 @@ header {
 }
 article {
 	margin: 20px 0;
-	> * { margin: 10px; }
+	> * {
+		margin: 10px;
+		overflow: hidden;
+	}
 	p { font-size: 14px; }
 	ul.list {
 		list-style: inside disc;
 		li { padding: 8px 16px; }
+		ul li { padding: 8px 24px; }
 	}
+	ul.list-circle { list-style: inside circle; }
 }
 
 /* ==================== Temporary Layer ==================== */

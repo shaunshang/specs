@@ -5,7 +5,6 @@
 	<title>Factory Tools Specs</title>
 	<link rel="stylesheet" href="../../assets/css/jquery-ui.css" />
 	<link rel="stylesheet" href="../../assets/css/style.css" />
-	<link rel="stylesheet" href="../../assets/css/buttons.css" />
 	<script src="../../assets/js/jquery-3.1.0.min.js"></script>
 	<script src="../../assets/js/jquery-ui.min.js"></script>
 	<script src="../../assets/js/temp-trigger.js"></script>
@@ -14,28 +13,148 @@
 </head>
 <body>
 	<main>
-		<header class="span10 font_regular">Buttons</header>
+		<header class="span10 font_subtitle">Buttons</header>
 		<ul class="span10 content_table">
-			<li><a href="#introduction" class="font_bold">Introduction</a></li>
-			<li><a href="#button_style" class="font_bold">Choosing button style</a></li>
-			<li><a href="#style" class="font_bold">Style</a></li>
-			<li><a href="#buttons" class="font_bold">Buttons</a></li>
+			<li><a href="#introduction" class="font_bold">1. Introduction</a></li>
+			<li><a href="#button_style" class="font_bold">2. Choosing button style</a></li>
+			<li><a href="#style" class="font_bold">3. Style</a></li>
+			<li><a href="#buttons" class="font_bold">4. Buttons</a></li>
 		</ul>
 		<article>
-			<header id="introduction" class="span10 font_light"><h5>Introduction</h5></header>
-		  <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="introduction" class="span10 font_heading2"><h5>1. Introduction</h5></header>
+		  <div class="span10">
+		  	<p>There are three types for buttons: flat buttons, square buttons, and round buttons.</p>
+		  	<ul class="list">
+		  		<li>
+		  			<b class="font_bold">Flat buttons</b> are text-only buttons. They may be used in dialogs, toolbars or inline. They fill with color on mouseover
+		  		</li>
+		  		<li>
+		  			<b class="font_bold">Square buttons</b> are rectangular-shaped buttons. They are the most commonly used buttons. They have a background color on idle state, and they have a different background color on mouseover.
+		  		</li>
+		  		<li>
+		  			<b class="font_bold">Round buttons</b> are circular, icon-only buttons. They are used for ubiquitous and important actions. They can be further categorised into two sub-types:
+		  			<ul class="list list-circle">
+		  				<li>
+		  					Ubiquitous: They have a thick border and a white background on idle state. They are used for some commonly understood actions, which no text descriptions is needed.
+		  				</li>
+		  				<li>
+		  					Important: They have a thick border and a colored background on idle state. They are used for some important quick actions. And they attract people’s attention by their shape and background colors.
+		  				</li>
+		  			</ul>
+		  		</li>
+		  	</ul>
+		  </div>
 		</article>
 		<article>
-			<header id="button_style" class="span10 font_light"><h5>Choosing button style</h5></header>
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="button_style" class="span10 font_heading2"><h5>2. Choosing button style</h5></header>
+			<div class="span10">
+				<p>
+					Choosing a button style depends on the primacy of the button, the number of containers on screen, and the screen layout.
+				</p>
+				<ul class="list">
+					<li>
+						<b class="font_bold">Function:</b> Is it important and ubiquitous enough to be a Round button?</li>
+					<li>
+						<b class="font_bold">Dimension:</b> Choose Square or Flat button depending on the container it will be in and how many layers you have on screen. There should not be many layers of objects on the screen
+					</li>
+					<li>
+						<b class="font_bold">Layout:</b> User one type of buttons per container as much as possible. Only mix button types when you have a good reason to, such as emphasizing an important function.
+					</li>
+				</ul>
+			</div>
 		</article>
 		<article>
-			<header id="style" class="span10 font_light"><h5>Style</h5></header>
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="style" class="span10 font_heading2"><h5>3. Style</h5></header>
+			<section>
+				<header class="span10 font_heading3"><h5>3.1 Typography</h5></header>
+				<p>Button text should be capitalized, and use the same font with the body</p>
+			</section>
+			<section>
+				<header class="span10 font_heading3"><h5>3.2 Dimension</h5></header>
+				<div class="span5 left">
+					<p>Square buttons and flat buttons should have a minimum height of 24px</p>
+					<p>Round buttons should have a minimum height of 32px</p>
+				</div>
+				<div class="span5 left"><img src="../../assets/images/square_button_1.png"></div>
+				<div class="clear"></div>
+			</section>
+			<section>
+				<header class="span10 font_heading3"><h5>3.3 Corner radius</h5></header>
+				<ul class="list">
+					<li><b class="font_bold">Square buttons</b> should have a 2px corner radius.</li>
+					<li><b class="font_bold">Round buttons</b> should simply have a 100% corner radius.</li>
+				</ul>
+			</section>
 		</article>
 		<article>
-			<header id="buttons" class="span10 font_light"><h5>Buttons</h5></header>
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="buttons" class="span10 font_heading2"><h5>4. Buttons</h5></header>
+			<section>
+				<header class="span10 font_heading3"><h5>4.1 Flat buttons</h5></header>
+				<div class="span5 left">
+					<p>
+						Flat buttons are text-only buttons, which do not have any background or icon. They should be used in the following locations:
+					</p>
+					<ul class="list">
+						<li>Toolbar</li>
+						<li>Dialogs</li>
+						<li>Inline with margin and padding, so the user know they are buttons</li>
+					</ul>
+				</div>
+				<div class="span5 left"><img src="../../assets/images/flat_buttons_1.png" alt=""></div>
+				<div class="clear"></div>
+				<div class="span5 left" style="margin-top: 20px;">
+					<p>
+						However, they may still have some background color when they are not in idle state.
+					</p>
+				</div>
+				<div class="span5 left" style="margin-top: 20px;">
+					<img src="../../assets/images/flat_buttons_2.png" alt="">
+				</div>
+				<div class="clear"></div>
+			</section>
+			<section>
+				<header class="span10 font_heading3"><h5>4.2 Square buttons</h5></header>
+				<div class="span5 left">
+					<p>
+						Square buttons are more standout than flat buttons. So, they can be used to differentiate between page content and functions.
+					</p>
+				</div>
+				<div class="span5 left"><img src="../../assets/images/square_buttons_1.png" alt=""></div>
+				<div class="clear"></div>
+				<div class="span5 left" style="margin-top: 20px;">
+					<p>
+						Square buttons have similar behavior as flat buttons when they are not idle.
+					</p>
+				</div>
+				<div class="span5 left" style="margin-top: 20px;">
+					<img src="../../assets/images/square_buttons_2.png" alt="">
+				</div>
+				<div class="clear"></div>
+			</section>
+			<section>
+				<header class="span10 font_heading3"><h5>4.3 Dropdown buttons</h5></header>
+				<div>
+					<p>
+						Dropdown buttons are similar as square buttons, but with a down arrow to indicate they are dropdown buttons. Please find 3.6_Menus for more information about dropdowns.
+					</p>
+				</div>
+			</section>
+			<section>
+				<header class="span10 font_heading3"><h5>4.4 Group buttons</h5></header>
+				<div class="span5 left">
+					<p>
+						Group buttons, also known as toggle buttons, may be used to group related options. They have more states than normal buttons, such as on and off. And multiple buttons can be on or off at the same time.
+					</p>
+					<p>
+						Group buttons requires at least three buttons in a group. Below is a good example of a button group.
+					</p>
+				</div>
+				<div class="span5 left">
+					<img src="../../assets/images/group_buttons_1.png" alt="">
+					<img src="../../assets/images/group_buttons_2.png" alt="">
+				</div>
+				<div class="clear"></div>
+			</section>
 		</article>
 	</main>
 </body>
