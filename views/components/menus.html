@@ -5,7 +5,6 @@
 	<title>Factory Tools Specs</title>
 	<link rel="stylesheet" href="../../assets/css/jquery-ui.css" />
 	<link rel="stylesheet" href="../../assets/css/style.css" />
-	<link rel="stylesheet" href="../../assets/css/buttons.css" />
 	<script src="../../assets/js/jquery-3.1.0.min.js"></script>
 	<script src="../../assets/js/jquery-ui.min.js"></script>
 	<script src="../../assets/js/temp-trigger.js"></script>
@@ -14,28 +13,158 @@
 </head>
 <body>
 	<main>
-		<header class="span10 font_regular">Buttons</header>
+		<header class="span10 font_subtitle">Menus</header>
 		<ul class="span10 content_table">
-			<li><a href="#introduction" class="font_bold">Introduction</a></li>
-			<li><a href="#button_style" class="font_bold">Choosing button style</a></li>
-			<li><a href="#style" class="font_bold">Style</a></li>
-			<li><a href="#buttons" class="font_bold">Buttons</a></li>
+			<li><a href="#introduction" class="font_bold">1. Introduction</a></li>
+			<li><a href="#usage" class="font_bold">2. Usage</a></li>
+			<li><a href="#menu_items" class="font_bold">3. Menu items</a></li>
+			<li><a href="#behavior" class="font_bold">4. Behavior</a></li>
+			<li><a href="#specs" class="font_bold">5. Specs</a></li>
 		</ul>
 		<article>
-			<header id="introduction" class="span10 font_light"><h5>Introduction</h5></header>
-		  <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="introduction" class="span10 font_heading2"><h5>1. Introduction</h5></header>
+			<div class="span8">
+			  <p>
+			  	A menu is a temporary piece of material that appears upon interaction with a button, action, pointer, or other control. It contains at least two menu items. Each menu item consists of a discrete option or action that can affect the app, the view, or selected elements within a view. They display a list of choices, with one choice per line.
+			  </p>
+		  </div>
+			<section>
+				<header class="span10 font_heading3"><h5>1.1 Types</h5></header>
+				<div class="span5">
+					<ul class="list">
+						<li>Simple menu</li>
+						<li>Multi-select menu</li>
+					</ul>
+				</div>
+		  </section>
+		  <section>
+				<header class="span10 font_heading3"><h5>1.2 Behavior</h5></header>
+				<div class="span5">
+					<ul class="list">
+						<li>Scrollable</li>
+						<li>Dropdown</li>
+						<li>Selection</li>
+					</ul>
+				</div>
+		  </section>
 		</article>
 		<article>
-			<header id="button_style" class="span10 font_light"><h5>Choosing button style</h5></header>
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="usage" class="span10 font_heading2"><h5>2. Usage</h5></header>
+			<section>
+				<header class="span10 font_heading3"><h5>2.1 Menu label</h5></header>
+				<div class="span8">
+					<p>
+						The label of a button or control should concisely and accurately reflect the items within the menu. Menu bars typically use single words as labels, like “file,” “format,” and “edit.” Other contexts may require longer labels. When labelling a menu, try to make the label as much descriptive as possible.
+					</p>
+				</div>
+		  </section>
+		  <section>
+				<header class="span10 font_heading3"><h5>2.2 Scrolling</h5></header>
+				<div class="span8">
+					<p>
+						If the height of a menu prevents all menu items from being displayed, the menu can scroll internally.
+					</p>
+				</div>
+		  </section>
+		  <section>
+				<header class="span10 font_heading3"><h5>2.3 Cascading</h5></header>
+				<div class="span8">
+					<p>
+						For menus that cascade, position the menus vertically and horizontally based on their proximity to screen edges.
+					</p>
+				</div>
+		  </section>
 		</article>
 		<article>
-			<header id="style" class="span10 font_light"><h5>Style</h5></header>
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="menu_items" class="span10 font_heading2"><h5>3. Menu items</h5></header>
+			<section>
+				<header class="span10 font_heading3"><h5>3.1 Single-line item</h5></header>
+				<div class="span8">
+					<p>
+						Each menu item is limited to a single line of text that describes the action it will perform when selected.
+					</p>
+					<p>Menu items may also contain:</p>
+					<ul class="list">
+						<li>Icons and tooltip text</li>
+						<li>Controls like checkbox to indicate multiple selected items</li>
+					</ul>
+				</div>
+		  </section>
+		  <section>
+				<header class="span10 font_heading3"><h5>3.2 Item ordering</h5></header>
+				<div class="span8">
+					<p>
+						In default, menu items should be sorted alphabetically. However, if there is a good reason, menus with static content can have the most frequently used menu items placed at the top of the menu.
+					</p>
+				</div>
+		  </section>
+		  <section>
+				<header class="span10 font_heading3"><h5>3.3 Item nesting</h5></header>
+				<div class="span8">
+					<p>
+						Menu items can reveal nested submenus. Ideally, limit nesting to one level deep, as it can be difficult to navigate multiple nested submenus.
+					</p>
+				</div>
+		  </section>
 		</article>
 		<article>
-			<header id="buttons" class="span10 font_light"><h5>Buttons</h5></header>
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="behavior" class="span10 font_heading2"><h5>4. Behavior</h5></header>
+			<section>
+				<header class="span10 font_heading3"><h5>4.1 Location</h5></header>
+				<div class="span5 left">
+					<p>
+						For navigation menu and simple menu, they should be positioned 90% below the menu triggering element.
+					</p>
+				</div>
+				<div class="span5 left"><img src="../../assets/images/menus_1.png" width="500px"></div>
+				<div class="clear"></div>
+				<br/><br/>
+				<div class="span5 left">
+					<p>
+						For menus in a form, they should be positioned over their triggering elements such that the currently selected menu item appears on top of the triggering element.
+					</p>
+				</div>
+				<div class="span5 left"><img src="../../assets/images/menus_2.png" width="500px"></div>
+				<div class="clear"></div>
+		  </section>
+		</article>
+		<article>
+			<header id="specs" class="span10 font_heading2"><h5>5. Specs</h5></header>
+			<div class="span5 left">
+				<section>
+					<header class="span10 font_heading3"><h5>5.1 Menu</h5></header>
+					<div class="">
+						<ul class="list">
+							<li>
+								<b class="font_bold">Padding:</b>
+								<ul class="list list-circle">
+									<li>Top: 8px</li>
+									<li>Bottom: 8px</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+			  </section>
+			  <section>
+					<header class="span10 font_heading3"><h5>5.2 Menu items</h5></header>
+					<div class="">
+						<ul class="list">
+							<li>
+								<b class="font_bold">Padding:</b>
+								<ul class="list list-circle">
+									<li>Top: 8px</li>
+									<li>Bottom: 8px</li>
+									<li>Left: 16px</li>
+									<li>Right: 16px</li>
+								</ul>
+							</li>
+							<li><b class="font_bold">Height:</b> 20px</li>
+						</ul>
+					</div>
+			  </section>
+			</div>
+		  <div class="span5 left"><img src="../../assets/images/menus_3.png" width="300px"></div>
+				<div class="clear"></div>
 		</article>
 	</main>
 </body>
