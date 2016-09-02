@@ -1,5 +1,9 @@
 $fonts: 'averta_bold', 'averta_light', 'averta_regular', 'averta_thin';
-$noto_cjks: 'noto_cjk_bold', 'noto_cjk_light', 'noto_cjk_regular', 'noto_cjk_thin';
+$ch_fonts: (
+	'ch_bold': 700,
+	'ch_regular': 500,
+);
+// $noto_cjks: 'noto_cjk_bold', 'noto_cjk_light', 'noto_cjk_regular', 'noto_cjk_thin';
 
 /* ==================== FONT ==================== */
 @each $font-face in $fonts {
@@ -14,10 +18,9 @@ $noto_cjks: 'noto_cjk_bold', 'noto_cjk_light', 'noto_cjk_regular', 'noto_cjk_thi
 
 	}
 }
-@each $font-face in $noto_cjks {
-	@font-face {
-		font-family: #{$font-face};
-		src: url("fonts/#{$font-face}.otf");
+@each $font, $size in $ch_fonts {
+	.#{$font} {
+		font-weight: #{$size};
 	}
 }
 /* ==================== END FONT ==================== */

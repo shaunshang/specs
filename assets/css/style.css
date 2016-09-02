@@ -367,22 +367,14 @@ body {
   src: url("fonts/averta_thin.eot?#iefix");
   src: url("fonts/averta_thin.eot?#iefix") format("eot"), url("fonts/averta_thin.woff2") format("woff2"), url("fonts/averta_thin.woff") format("woff"), url("fonts/averta_thin.ttf") format("truetype"), url("fonts/averta_thin.svg#averta_bold") format("svg");
 }
-@font-face {
-  font-family: noto_cjk_bold;
-  src: url("fonts/noto_cjk_bold.otf");
+.ch_bold {
+  font-weight: 700;
 }
-@font-face {
-  font-family: noto_cjk_light;
-  src: url("fonts/noto_cjk_light.otf");
+
+.ch_regular {
+  font-weight: 500;
 }
-@font-face {
-  font-family: noto_cjk_regular;
-  src: url("fonts/noto_cjk_regular.otf");
-}
-@font-face {
-  font-family: noto_cjk_thin;
-  src: url("fonts/noto_cjk_thin.otf");
-}
+
 /* ==================== END FONT ==================== */
 /* ==================== STYLE ==================== */
 .font_title {
@@ -493,24 +485,8 @@ body {
   font-family: averta_thin;
 }
 
-.noto_bold {
-  font-family: noto_cjk_bold;
-}
-
-.noto_light {
-  font-family: noto_cjk_light;
-}
-
-.noto_regular {
-  font-family: noto_cjk_regular;
-}
-
-.noto_thin {
-  font-family: noto_cjk_thin;
-}
-
 body {
-  font-family: Averta_regular;
+  font-family: helvetica;
   font-size: 14px;
   line-height: 20px;
 }
