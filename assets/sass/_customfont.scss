@@ -1,5 +1,8 @@
-/* ==================== AVERTA ==================== */
-@each $font-face in 'averta_bold', 'averta_light', 'averta_regular', 'averta_thin' {
+$fonts: 'averta_bold', 'averta_light', 'averta_regular', 'averta_thin';
+$noto_cjks: 'noto_cjk_bold', 'noto_cjk_light', 'noto_cjk_regular', 'noto_cjk_thin';
+
+/* ==================== FONT ==================== */
+@each $font-face in $fonts {
 	@font-face {
 		font-family: #{$font-face};
 		src: url("fonts/#{$font-face}.eot?#iefix");
@@ -8,18 +11,16 @@
 				 url("fonts/#{$font-face}.woff") format("woff"),
 				 url("fonts/#{$font-face}.ttf") format("truetype"),
 				 url("fonts/#{$font-face}.svg#averta_bold") format("svg");
+
 	}
 }
-/* ==================== END AVERTA ==================== */
-
-/* ==================== NOTO ==================== */
-@each $font-face in 'noto_bold', 'noto_light', 'noto_regular', 'noto_thin' {
+@each $font-face in $noto_cjks {
 	@font-face {
 		font-family: #{$font-face};
 		src: url("fonts/#{$font-face}.otf");
 	}
 }
-/* ==================== END NOTO ==================== */
+/* ==================== END FONT ==================== */
 
 /* ==================== STYLE ==================== */
 $font-size: (
@@ -55,11 +56,3 @@ $font-size: (
 	text-transform: uppercase;
 }
 /* ==================== END STYLE ==================== */
-
-// /* ==================== LINE HEIGHT ==================== */
-// .font_title { line-height: 26px;}
-// .font_subtitle {}
-// .font_body {}
-// .font_caption {}
-// .font_button {}
-// /* ==================== END LINE HEIGHT ==================== */

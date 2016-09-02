@@ -346,7 +346,7 @@ body {
 }
 
 /* ==================== END Icon Font ==================== */
-/* ==================== AVERTA ==================== */
+/* ==================== FONT ==================== */
 @font-face {
   font-family: averta_bold;
   src: url("fonts/averta_bold.eot?#iefix");
@@ -367,25 +367,23 @@ body {
   src: url("fonts/averta_thin.eot?#iefix");
   src: url("fonts/averta_thin.eot?#iefix") format("eot"), url("fonts/averta_thin.woff2") format("woff2"), url("fonts/averta_thin.woff") format("woff"), url("fonts/averta_thin.ttf") format("truetype"), url("fonts/averta_thin.svg#averta_bold") format("svg");
 }
-/* ==================== END AVERTA ==================== */
-/* ==================== NOTO ==================== */
 @font-face {
-  font-family: noto_bold;
-  src: url("fonts/noto_bold.otf");
+  font-family: noto_cjk_bold;
+  src: url("fonts/noto_cjk_bold.otf");
 }
 @font-face {
-  font-family: noto_light;
-  src: url("fonts/noto_light.otf");
+  font-family: noto_cjk_light;
+  src: url("fonts/noto_cjk_light.otf");
 }
 @font-face {
-  font-family: noto_regular;
-  src: url("fonts/noto_regular.otf");
+  font-family: noto_cjk_regular;
+  src: url("fonts/noto_cjk_regular.otf");
 }
 @font-face {
-  font-family: noto_thin;
-  src: url("fonts/noto_thin.otf");
+  font-family: noto_cjk_thin;
+  src: url("fonts/noto_cjk_thin.otf");
 }
-/* ==================== END NOTO ==================== */
+/* ==================== END FONT ==================== */
 /* ==================== STYLE ==================== */
 .font_title {
   font-size: 46px;
@@ -496,19 +494,19 @@ body {
 }
 
 .noto_bold {
-  font-family: noto_bold;
+  font-family: noto_cjk_bold;
 }
 
 .noto_light {
-  font-family: noto_light;
+  font-family: noto_cjk_light;
 }
 
 .noto_regular {
-  font-family: noto_regular;
+  font-family: noto_cjk_regular;
 }
 
 .noto_thin {
-  font-family: noto_thin;
+  font-family: noto_cjk_thin;
 }
 
 body {
