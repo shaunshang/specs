@@ -5,7 +5,6 @@
 	<title>Factory Tools Specs</title>
 	<link rel="stylesheet" href="../../assets/css/jquery-ui.css" />
 	<link rel="stylesheet" href="../../assets/css/style.css" />
-	<link rel="stylesheet" href="../../assets/css/buttons.css" />
 	<script src="../../assets/js/jquery-3.1.0.min.js"></script>
 	<script src="../../assets/js/jquery-ui.min.js"></script>
 	<script src="../../assets/js/temp-trigger.js"></script>
@@ -14,28 +13,83 @@
 </head>
 <body>
 	<main>
-		<header class="span10 font_regular">Buttons</header>
+		<header class="span10 font_subtitle">Text fields</header>
 		<ul class="span10 content_table">
-			<li><a href="#introduction" class="font_bold">Introduction</a></li>
-			<li><a href="#button_style" class="font_bold">Choosing button style</a></li>
-			<li><a href="#style" class="font_bold">Style</a></li>
-			<li><a href="#buttons" class="font_bold">Buttons</a></li>
+			<li><a href="#introduction" class="font_bold">1. Introduction</a></li>
+			<li><a href="#label" class="font_bold">2. Label</a></li>
+			<li><a href="#style" class="font_bold">3. Style</a></li>
 		</ul>
 		<article>
-			<header id="introduction" class="span10 font_light"><h5>Introduction</h5></header>
-		  <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="introduction" class="span10 font_heading2"><h5>1. Introduction</h5></header>
+		  <p>Text fields allow users to input text, select text, and lookup data via auto-completion.</p>
 		</article>
 		<article>
-			<header id="button_style" class="span10 font_light"><h5>Choosing button style</h5></header>
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="label" class="span10 font_heading2"><h5>2. Label</h5></header>
+			<section>
+				<div class="span5 left">
+					<p>
+						When the user engages with the text input field, the floating inline labels move to float above the field.
+					</p>
+				</div>
+				<div class="span5 left"><img src="../../assets/images/textfield_1.png" alt=""></div>
+				<div class="clear"></div>
+			</section>
+			<section>
+				<header class="span10 font_heading3"><h5>2.1 Label color</h5></header>
+				<p>
+					The label’s color should reflect your app’s color palette, while also meeting appropriate contrast ratios.
+				</p>
+			</section>
+			<section>
+				<header class="span10 font_heading3"><h5>2.2 Specs</h5></header>
+				<div class="span4 left">
+					<p>Idle state:</p>
+					<ul class="list">
+						<li><b class="font_bold">Line height:</b> 30px</li>
+						<li><b class="font_bold">Font size:</b> 18px</li>
+						<li><b class="font_bold">Font weight:</b> 200</li>
+						<li><b class="font_bold">Padding:</b> 0 8px</li>
+						<li><b class="font_bold">Margin:</b> 0 4px</li>
+					</ul>
+				</div>
+				<div class="span4 left">
+					<p>Active state:</p>
+					<ul class="list">
+						<li><b class="font_bold">Line height:</b> 30px</li>
+						<li><b class="font_bold">Font size:</b> 14px</li>
+						<li><b class="font_bold">Font weight:</b> 400</li>
+						<li><b class="font_bold">Padding:</b> 0 8px</li>
+						<li><b class="font_bold">Margin:</b> 0 4px</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</section>
 		</article>
 		<article>
-			<header id="style" class="span10 font_light"><h5>Style</h5></header>
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
-		</article>
-		<article>
-			<header id="buttons" class="span10 font_light"><h5>Buttons</h5></header>
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<header id="style" class="span10 font_heading2"><h5>3. Style</h5></header>
+			<section>
+				<header class="span10 font_heading3"><h5>3.1 Text field</h5></header>
+				<ul class="list">
+					<li><b class="font_bold">Height:</b> 30px</li>
+					<li><b class="font_bold">Padding:</b> 0 8px</li>
+					<li><b class="font_bold">Font size:</b> 18px</li>
+					<li><b class="font_bold">Font weight:</b> 200</li>
+					<li><b class="font_bold">Border bottom:</b> solid 2px grey_400</li>
+					<li><b class="font_bold">Color:</b> grey_700</li>
+				</ul>
+			</section>
+			<section>
+				<header class="span10 font_heading3"><h5>3.2 Text area</h5></header>
+				<ul class="list">
+					<li><b class="font_bold">Default row:</b> 1</li>
+					<li><b class="font_bold">Max row:</b> 4</li>
+					<li><b class="font_bold">Padding:</b> 0 8px</li>
+					<li><b class="font_bold">Font size:</b> 18px</li>
+					<li><b class="font_bold">Font weight:</b> 200</li>
+					<li><b class="font_bold">Border bottom:</b> solid 2px grey_400</li>
+					<li><b class="font_bold">Color:</b> grey_700</li>
+				</ul>
+			</section>
 		</article>
 	</main>
 </body>
