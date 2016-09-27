@@ -1,0 +1,150 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Factory Tools Specs</title>
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.css" />
+	<link rel="stylesheet" href="../../assets/css/style.css" />
+	<script src="../../assets/js/jquery-3.1.0.min.js"></script>
+	<script src="../../assets/js/jquery-ui.min.js"></script>
+	<script src="../../assets/js/temp-trigger.js"></script>
+	<script src="../../assets/js/navigation.js"></script>
+	<script src="../../assets/js/style.js"></script>
+</head>
+<body>
+	<main>
+		<header class="span10 font_subtitle">Errors</header>
+		<ul class="span10 content_table">
+			<li><a href="#introduction" class="font_bold">1. Introduction</a></li>
+			<li><a href="#usage" class="font_bold">2. Usage</a></li>
+			<li><a href="#user_input" class="font_bold">3. User input errors</a></li>
+			<li><a href="#notifications" class="font_bold">4. Notifications</a></li>
+		</ul>
+		<article>
+			<header id="introduction" class="span10 font_heading2"><h5>1. Introduction</h5></header>
+			<div class="span10">
+				<p>Errors occur when an app fails to complete an expected action.</p>
+				<br>
+			  <p>Some examples of errors include:</p>
+			  <ul class="list">
+			  	<li>When user input is not understood</li>
+			  	<li>An app failing to load</li>
+			  	<li>Incompatible operations are run concurrently</li>
+			  </ul>
+			  <br>
+			  <p>So to sum up those examples, we can categorize those errors into types:</p>
+			  <ul class="list">
+			  	<li>User input errors</li>
+			  	<li>App errors</li>
+			  	<li>Incompatible state errors</li>
+			  </ul>
+			</div>
+		</article>
+		<article>
+			<header id="usage" class="span10 font_heading2"><h5>2. Usage</h5></header>
+			<div class="span8">
+				<p>
+					As errors do occur, sometimes by the users, and sometimes by the app itself. We should try to minimize errors by designing apps that make it easy for users to input information flexibly. Because we can’t forecast or control user from what they do, but we can make the app to be as much flexible as possible. By flexible we mean that:
+				</p>
+				<ul class="list">
+					<li>apps should accept common data formats that use affordances to improve user understanding</li>
+					<li>once errors occurred, apps should address them clearly</li>
+				</ul>
+			</div>
+		</article>
+		<article>
+			<header id="user_input" class="span10 font_heading2"><h5>3. User input errors</h5></header>
+			<div class="span8">
+				<p>
+					Help users fix input errors as soon as they are detected. Disable the submission of a form if errors are detected, and if detected only after form submission, clearly explain the error and how to fix it.
+				</p>
+			</div>
+			<section class="span8">
+				<header class="span10 font_heading3"><h5>3.1 Text field input</h5></header>
+				<p>
+					Show error text only after user interaction with a field. If the user inputs incorrect data, helper text may transform into error text. (Minimize form text to the essentials. Not every text field needs helper and/or error text.)
+				</p>
+				<div class="span5 left">
+					<img src="../../assets/images/user_input_1.png" alt="">
+				</div>
+				<div class="span5 left">
+					<img src="../../assets/images/user_input_2.png" alt="">
+				</div>
+				<div class="clear"></div>
+			</section>
+			<section>
+				<header class="span10 font_heading3"><h5>3.2 Color</h5></header>
+				<div class="span8">
+					<p>
+						It’s recommended that you use a contrasting color for error states, such as a warmer hue like red or orange. Error text should be legible, with noticeable contrast against its background color.
+					</p>
+				</div>
+			</section>
+			<section>
+				<header class="span10 font_heading3"><h5>3.3 Style</h5></header>
+				<div class="span5 left">
+					<ul class="list">
+						<li><b class="font_bold">Line height:</b> 20px</li>
+						<li><b class="font_bold">Font size:</b> 11px</li>
+						<li><b class="font_bold">Padding:</b> 0 4px</li>
+						<li><b class="font_bold">Display:</b> block</li>
+					</ul>
+				</div>
+				<div class="span5 left">
+					<img src="../../assets/images/user_input_3.png" width="400">
+				</div>
+				<div class="clear"></div>
+			</section>
+		</article>
+		<article>
+			<header id="notifications" class="span10 font_heading2"><h5>4. Notifications</h5></header>
+			<div class="span8">
+				<p>Notifications occur independent of user input.</p>
+			</div>
+			<section>
+				<header class="span10 font_heading3"><h5>4.1 Status notifications</h5></header>
+				<div>
+					<img src="../../assets/images/app_noti_1.png" width="800">
+				</div>
+				<br>
+				<div>
+					<img src="../../assets/images/app_noti_2.png" width="800">
+				</div>
+			</section>
+			<section>
+				<header class="span10 font_heading3"><h5>4.1.1 Style</h5></header>
+				<div class="span8">
+					<ul class="list">
+						<li><b class="font_bold">Position:</b> relative</li>
+						<li><b class="font_bold">Padding:</b> 16px 64px</li>
+						<li><b class="font_bold">Minimum height:</b> 30px</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<header class="span10 font_heading3"><h5>4.2 Global notifications</h5></header>
+				<div>
+					<img src="../../assets/images/global_noti_1.png" width="800">
+				</div>
+				<br>
+				<div>
+					<img src="../../assets/images/global_noti_2.png" width="800">
+				</div>
+				<br>
+				<div>
+					<img src="../../assets/images/global_noti_3.png" width="800">
+				</div>
+				<header class="span10 font_heading3"><h5>4.2.1 Style</h5></header>
+				<div class="span8">
+					<ul class="list">
+						<li><b class="font_bold">Position:</b> fixed</li>
+						<li><b class="font_bold">Top:</b> 10px</li>
+						<li><b class="font_bold">Right:</b> 0</li>
+						<li><b class="font_bold">Padding:</b> 16px 64px 16px 16px</li>
+					</ul>
+				</div>
+			</section>
+		</article>
+	</main>
+</body>
+</html>

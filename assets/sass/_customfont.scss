@@ -15,7 +15,6 @@ $ch_fonts: (
 				 url("fonts/#{$font-face}.woff") format("woff"),
 				 url("fonts/#{$font-face}.ttf") format("truetype"),
 				 url("fonts/#{$font-face}.svg#averta_bold") format("svg");
-
 	}
 }
 @each $font, $size in $ch_fonts {
@@ -38,7 +37,7 @@ $font-size: (
 	button: 	 14
 );
 @each $name, $size in $font-size {
-	.font_#{$name} {
+	.font_#{$name} h5 {
 		font-size: #{$size+"px"};
 		line-height: #{($size+10)+"px"};
 	}
