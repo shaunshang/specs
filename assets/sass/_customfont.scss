@@ -18,9 +18,7 @@ $ch_fonts: (
 	}
 }
 @each $font, $size in $ch_fonts {
-	.#{$font} {
-		font-weight: #{$size};
-	}
+	.#{$font} { font-weight: #{$size}; }
 }
 /* ==================== END FONT ==================== */
 
@@ -37,7 +35,7 @@ $font-size: (
 	button: 	 14
 );
 @each $name, $size in $font-size {
-	.font_#{$name} h5 {
+	.font_#{$name} {
 		font-size: #{$size+"px"};
 		line-height: #{($size+10)+"px"};
 	}
